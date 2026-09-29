@@ -1,0 +1,24 @@
+[00:52] Client: Hello.
+[00:58] You: Hello sir, good afternoon.
+[01:04] Client: AMC.
+[01:04] You: AMC.
+[01:23] You: Nothing has come up about AMC, right?
+[01:35] You: Here.
+[01:37] Client: What should we mainly look at in MC?
+[01:39] Client: The staff should be able to be assigned to it.
+[01:39] You: The staff can be assigned to their admin.
+[01:40] You: Then, what is ours?
+[01:41] Client: Then what happened?
+[01:44] You: Service report needs to be sent.
+[01:46] Client: Need to send the service report.
+[01:48] You: If it is possible to create a WhatsApp chatbot for that application, then do it.
+[01:49] Client: I am doing this to see if I can integrate the WhatsApp chatbot with that application.
+[01:51] You: Because that will be a little helpful.
+[01:52] Client: Because that will be a little helpful. And then we have clients.
+[01:53] You: Lines.
+[01:54] You: Going to see, going to see our clients.
+[01:55] Client: Going to see, going to see our clients.
+[01:56] You: It's a little easier for us.
+[01:57] Client: Let's make it a little easier.
+[01:59] You: Our service agency next door should be connected location-based.
+[02:00] Client: Our service agency should be connected closely, location-based.

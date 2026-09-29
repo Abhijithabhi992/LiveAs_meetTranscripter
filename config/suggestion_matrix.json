@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "description": "Generic RGM business quantification matrix",
+  "topics": [
+    {
+      "id": "company_manpower",
+      "name": "Company & Manpower",
+      "trigger_phrases": [
+        "staff count",
+        "number of employees",
+        "sales staff",
+        "service staff",
+        "operations staff",
+        "field technicians",
+        "engineers",
+        "HR staff",
+        "admin staff",
+        "monthly salary",
+        "branches",
+        "operating locations"
+      ],
+      "discovery_points": [
+        "Total staff count",
+        "Sales staff count",
+        "Service / operations staff count",
+        "Field technicians / engineers",
+        "HR / admin staff count",
+        "Average monthly staff salary",
+        "Number of branches / operating locations"
+      ]
+    },
+    {
+      "id": "customer_base",
+      "name": "Customer Base",
+      "trigger_phrases": [
+        "customer base",
+        "active customers",
+        "new customers",
+        "installed equipment",
+        "customer locations",
+        "customer sites"
+      ],
+      "discovery_points": [
+        "Total active customer base",
+        "Approx. new customers added per month",
+        "Installed equipment / assets, if relevant",
+        "Average customer locations / sites, if relevant"
+      ]
+    },
+    {
+      "id": "sales",
+      "name": "Sales",
+      "trigger_phrases": [
+        "sales",
+        "leads",
+        "lead conversion",
+        "deal value",
+        "order value",
+        "quotation",
+        "quote",
+        "sales staff"
+      ],
+      "discovery_points": [
+        "Leads handled by one sales staff per day",
+        "Approx. total leads per month",
+        "Average deal / order value",
+        "Approx. lead conversion rate, if known",
+        "Quotations generated per month",
+        "Average time to prepare a quotation, if easily known"
+      ]
+    },
+    {
+      "id": "service_field_operations",
+      "name": "Service & Field Operations",
+      "trigger_phrases": [
+        "service request",
+        "service job",
+        "field operations",
+        "technician visit",
+        "site visit",
+        "repeat visit",
+        "revisit",
+        "job value"
+      ],
+      "discovery_points": [
+        "Service requests received per day",
+        "Service jobs completed per day",
+        "Average service / job value, if chargeable",
+        "Average customer/site visits per field employee per day",
+        "Approx. repeat / revisit cases per month, if known"
+      ]
+    },
+    {
+      "id": "amc_renewals",
+      "name": "AMC / Renewals",
+      "trigger_phrases": [
+        "AMC",
+        "annual maintenance contract",
+        "maintenance contract",
+        "AMC renewal",
+        "renewal due",
+        "missed renewal",
+        "delayed renewal"
+      ],
+      "discovery_points": [
+        "Total AMC customers / assets under AMC",
+        "Average AMC value",
+        "Approx. AMC renewals due per month",
+        "Approx. AMC renewal rate, if known",
+        "Average AMC visits per customer / asset per year",
+        "Approx. missed / delayed renewals, if known"
+      ]
+    },
+    {
+      "id": "projects_installation",
+      "name": "Projects / Installation",
+      "trigger_phrases": [
+        "project",
+        "installation",
+        "active projects",
+        "project value",
+        "project duration",
+        "project team"
+      ],
+      "discovery_points": [
+        "Active projects at a time",
+        "New projects / installations per month",
+        "Average project value",
+        "Average project duration",
+        "Approx. employees / teams involved in a project"
+      ]
+    },
+    {
+      "id": "billing_collection",
+      "name": "Billing & Collection",
+      "trigger_phrases": [
+        "billing",
+        "invoice",
+        "invoices",
+        "collection",
+        "overdue invoice",
+        "overdue payment",
+        "monthly billing"
+      ],
+      "discovery_points": [
+        "Invoices generated per month",
+        "Approx. monthly billing value",
+        "Approx. overdue invoices / customers, if known"
+      ]
+    },
+    {
+      "id": "purchase_expense",
+      "name": "Purchase & Expense",
+      "trigger_phrases": [
+        "purchase",
+        "purchase order",
+        "PO",
+        "expense",
+        "expense claim",
+        "expense approval",
+        "operational expenses"
+      ],
+      "discovery_points": [
+        "Purchase transactions / POs per month",
+        "Expense entries / claims per month",
+        "Approx. monthly operational expenses, if relevant",
+        "Number of people involved in purchase / expense approval"
+      ]
+    },
+    {
+      "id": "hr_attendance",
+      "name": "HR / Attendance",
+      "trigger_phrases": [
+        "HR",
+        "attendance",
+        "leave request",
+        "employee attendance",
+        "biometric",
+        "field employees",
+        "mobile employees"
+      ],
+      "discovery_points": [
+        "Employees requiring attendance tracking",
+        "Field / mobile employees",
+        "Approx. leave / attendance requests per month",
+        "Current attendance method: Manual / Biometric / App / Other"
+      ]
+    },
+    {
+      "id": "location_field_tracking",
+      "name": "Location / Field Tracking",
+      "trigger_phrases": [
+        "location tracking",
+        "live location",
+        "visit tracking",
+        "field tracking",
+        "customer visits",
+        "company vehicles",
+        "travel claims"
+      ],
+      "discovery_points": [
+        "Employees requiring live / visit location tracking",
+        "Customer/site visits per day",
+        "Company vehicles, if relevant",
+        "Approx. travel / field claims per month, if relevant"
+      ]
+    },
+    {
+      "id": "management_reporting",
+      "name": "Management & Reporting",
+      "trigger_phrases": [
+        "management report",
+        "reporting",
+        "reports",
+        "consolidating reports",
+        "report preparation"
+      ],
+      "discovery_points": [
+        "Approx. management reports prepared per month",
+        "Employees involved in preparing / consolidating reports",
+        "Approx. time spent on reporting per week, if easily known"
+      ]
+    },
+    {
+      "id": "high_value_discovery",
+      "name": "Two High-Value Discovery Questions",
+      "trigger_phrases": [
+        "manual activity",
+        "repetitive activity",
+        "business losing efficiency",
+        "business leakage",
+        "efficiency loss",
+        "where are you losing",
+        "what would you remove"
+      ],
+      "discovery_points": [
+        "If you could remove one repetitive/manual activity from your employees today, what would it be?",
+        "Where do you feel business is currently leaking or losing efficiency — leads, quotations, AMC renewals, service, collections, employee productivity, projects, reporting, or elsewhere?"
+      ]
+    }
+  ]
+}

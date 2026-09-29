@@ -1,0 +1,16 @@
+{
+  "business_profile": {
+    "industry": "None",
+    "business_summary": "Unable to determine a business profile due to the minimal nature of the provided transcript, which consists only of greetings and acknowledgments."
+  },
+  "current_processes": [],
+  "opportunities": [],
+  "explicit_numbers": [],
+  "missing_inputs": [],
+  "analysis_notes": [
+    "The provided transcript is extremely short and contains only conversational greetings and acknowledgments. There is no substantive discussion regarding business processes, customer requirements, operational challenges, or requested automations.",
+    "As a result, there are no measurable business-impact opportunities supported by the meeting. The transcript does not contain any data points regarding costs, time consumption, capacity, inventory, or any other business metric.",
+    "The 'VERIFIED CUSTOMER REQUIREMENTS' section was provided as empty context, offering no additional information.",
+    "Because there are no business processes, pain points, or requested changes discussed, the 'current_processes' and 'opportunities' arrays are empty."
+  ]
+}

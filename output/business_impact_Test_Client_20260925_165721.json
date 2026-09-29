@@ -1,0 +1,17 @@
+{
+  "business_profile": {
+    "industry": "None",
+    "business_summary": "The meeting transcript is too fragmented and lacks sufficient context to establish a coherent business profile or current-state processes."
+  },
+  "current_processes": [],
+  "opportunities": [],
+  "explicit_numbers": [],
+  "missing_inputs": [],
+  "analysis_notes": [
+    "The transcript consists almost entirely of greetings, fragmented conversational fragments, and incomplete sentences (e.g., 'We had called after telling them to call our other client, or if it was beyond that, their...', 'Meaning, you.').",
+    "There are no verifiable business processes, pain points, or automation requests supported by the text.",
+    "No measurable business impact (cost, time, capacity, resource utilization, etc.) can be extracted because there are no coherent descriptions of work, volume, or financial values.",
+    "The only potential reference to a process is 'they had sent it to those who created the proposal', but this is not a complete or verifiable description of a current-state process, and no associated costs or time drivers are mentioned.",
+    "No numeric values, transaction volumes, or financial figures are present in the transcript."
+  ]
+}

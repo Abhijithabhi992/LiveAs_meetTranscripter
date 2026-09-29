@@ -1,0 +1,15 @@
+{
+  "business_profile": {
+    "industry": "None",
+    "business_summary": "None"
+  },
+  "current_processes": [],
+  "opportunities": [],
+  "explicit_numbers": [],
+  "missing_inputs": [],
+  "analysis_notes": [
+    "The provided transcript consists solely of a greeting ('Hello') at [00:07] with no further conversation, context, or business details.",
+    "As a result, there are no business processes, pain points, cost drivers, automation requests, or measurable impacts that can be extracted from the meeting.",
+    "No industry, business summary, or other verifiable facts about the customer's operations are present."
+  ]
+}

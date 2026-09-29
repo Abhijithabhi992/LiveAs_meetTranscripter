@@ -1,0 +1,14 @@
+{
+  "business_profile": {
+    "industry": "None",
+    "business_summary": "None"
+  },
+  "current_processes": [],
+  "opportunities": [],
+  "explicit_numbers": [],
+  "missing_inputs": [],
+  "analysis_notes": [
+    "The provided transcript contains only a brief, non-substantive exchange ('Hello', 'What is there to feel happy about?', 'What did you say?', 'Culture') with no discussion of business processes, costs, times, resources, or operational metrics. There is no identifiable business context, customer requirements, or process details to analyze for measurable business-impact opportunities.",
+    "As a result, there are no supported business cost, time, capacity, resource-utilization, operational-efficiency, revenue-leakage, error/rework, travel/dispatch, inventory, communication, reporting, or other measurable impact opportunities to extract or quantify."
+  ]
+}

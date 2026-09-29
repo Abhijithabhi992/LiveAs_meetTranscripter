@@ -1,0 +1,16 @@
+{
+  "business_profile": {
+    "industry": "None",
+    "business_summary": "The provided transcript is too brief to establish a business profile."
+  },
+  "current_processes": [],
+  "opportunities": [],
+  "explicit_numbers": [],
+  "missing_inputs": [],
+  "analysis_notes": [
+    "The meeting transcript consists entirely of informal greetings and conversational fillers (e.g., 'Hello', 'How are you?', 'Did you eat?').",
+    "There are no discussions regarding business processes, operational pain points, requested automations, financial figures, or any measurable business metrics.",
+    "Because there is no substantive business content, it is impossible to identify any current-state processes, cost drivers, or automation opportunities.",
+    "As per the rules, no opportunities can be invented or assumed. Therefore, the opportunities array is empty."
+  ]
+}

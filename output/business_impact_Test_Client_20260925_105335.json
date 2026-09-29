@@ -1,0 +1,434 @@
+{
+  "business_profile": {
+    "industry": "HVAC Service and Maintenance",
+    "business_summary": "A company with 10 to 12 staff handling air conditioner service requests. They currently manually process and track service requests, leading to time consumption, and want to implement an automated web application for request assignment, tracking, and technician performance monitoring."
+  },
+  "current_processes": [
+    {
+      "area": "Service Request Handling",
+      "current_state": "Service requests (complaints) are manually handled by staff sitting behind a desk, assigned manually to technicians, and tracked by hand.",
+      "pain_point": "Handling and tracking service requests manually takes a lot of time and is a dedicated staff role.",
+      "evidence": "There are 10 to 12 staff to handle the service... There are difficulties in handling and a lot of time is being spent on it."
+    },
+    {
+      "area": "Technician Assignment",
+      "current_state": "Service requests are manually assigned to technicians based on physical location and availability, without algorithmic optimization.",
+      "pain_point": "Manual assignment is inefficient and does not automatically account for technician workload, location, or customer feedback.",
+      "evidence": "Who all can assign this?... Manual is not needed, automatic assignment should happen."
+    },
+    {
+      "area": "Technician Performance Management",
+      "current_state": "Technician performance is tracked through manual feedback, negative reviews, and return rates, which are not integrated into the assignment system.",
+      "pain_point": "Technicians with bad reviews, low feedback, or returns are still assigned, leading to potential service issues.",
+      "evidence": "If any technician says that the customer has any issues or conflicts... Bad reviews... If someone has given a return, then they should not be assigned."
+    },
+    {
+      "area": "Technician Reporting",
+      "current_state": "Technicians manually track and report daily activities like service requests attended, closed, charges collected, and new products sold.",
+      "pain_point": "Manual reporting is time-consuming and lacks a consolidated graphical dashboard.",
+      "evidence": "Technicians must have access to a graphical dashboard to view their daily work activities... We need another system in a different way."
+    },
+    {
+      "area": "System Notifications",
+      "current_state": "Managers are not automatically notified about pending or overdue service requests.",
+      "pain_point": "Lack of automated alerts for pending or overdue requests.",
+      "evidence": "This is basically what is needed... the manager receives emails... Needed."
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "BI-01",
+      "area": "Service Request Processing",
+      "current_cost_driver": "Manual handling of service requests by dedicated staff.",
+      "current_state": "Staff manually processes incoming service requests, assigns them to technicians, and tracks their status.",
+      "automation_opportunity": "Implement an automated web application to handle service requests, auto-assign them based on location, workload, and time, and track status automatically.",
+      "impact_type": "labour_time",
+      "metric": "Hours per month saved by staff on manual service request handling and tracking.",
+      "unit": "hours/month",
+      "formula": "Total_Monthly_Hours_Saved = (Hours_Per_Request * Requests_Per_Month) - (Hours_Per_Request * Requests_Per_Month * Automation_Efficiency)",
+      "variables": [
+        {
+          "name": "hours_per_request",
+          "label": "Time spent per manual service request",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours",
+          "source": "MISSING",
+          "evidence": "Meeting states manual handling takes a lot of time, but no specific value is given."
+        },
+        {
+          "name": "requests_per_month",
+          "label": "Number of service requests per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "requests/month",
+          "source": "MISSING",
+          "evidence": "Meeting mentions daily requests but no specific monthly volume is provided."
+        },
+        {
+          "name": "automation_efficiency",
+          "label": "Efficiency gain from automation",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "percentage",
+          "source": "MISSING",
+          "evidence": "Meeting requests automation but does not quantify the time savings percentage."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A - No benchmark provided in meeting.",
+      "assumption_note": "Benchmark values are illustrative and not supported by the meeting.",
+      "example_calculation": "If 100 requests/month take 0.5 hours each manually, total time is 50 hours/month. With 90% automation efficiency, time saved is 45 hours/month.",
+      "calculation_note": "Missing inputs: hours_per_request, requests_per_month, automation_efficiency",
+      "model_calculation_note": "Result is illustrative because required input values (hours per request, requests per month, efficiency percentage) are missing."
+    },
+    {
+      "id": "BI-02",
+      "area": "Technician Assignment",
+      "current_cost_driver": "Manual assignment of service requests to technicians, leading to inefficiencies in route planning and workload balancing.",
+      "current_state": "Technicians are manually assigned requests based on proximity and availability, without considering real-time workload or time periods.",
+      "automation_opportunity": "Implement an automatic assignment algorithm based on customer location, technician location, current workload, and time period.",
+      "impact_type": "travel_cost",
+      "metric": "Travel distance or time saved per month due to optimized assignment.",
+      "unit": "km/month or hours/month",
+      "formula": "Total_Monthly_Travel_Saved = (Distance_Per_Request * Requests_Per_Month) - (Optimized_Distance_Per_Request * Requests_Per_Month)",
+      "variables": [
+        {
+          "name": "distance_per_request",
+          "label": "Average distance traveled per service request",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "km",
+          "source": "MISSING",
+          "evidence": "Meeting mentions mapping locations but provides no distance data."
+        },
+        {
+          "name": "optimized_distance_per_request",
+          "label": "Average distance with optimized assignment",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "km",
+          "source": "MISSING",
+          "evidence": "Meeting requests optimized assignment but provides no baseline distance."
+        },
+        {
+          "name": "requests_per_month",
+          "label": "Number of service requests per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "requests/month",
+          "source": "MISSING",
+          "evidence": "Meeting mentions daily requests but no specific monthly volume is provided."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A - No benchmark provided in meeting.",
+      "assumption_note": "Benchmark values are illustrative and not supported by the meeting.",
+      "example_calculation": "If 100 requests/month travel 20 km each manually, total is 2000 km/month. With 15% optimization, saved distance is 300 km/month.",
+      "calculation_note": "Missing inputs: distance_per_request, optimized_distance_per_request, requests_per_month",
+      "model_calculation_note": "Result is illustrative because required input values (distance per request, optimized distance, requests per month) are missing."
+    },
+    {
+      "id": "BI-03",
+      "area": "Technician Performance Management",
+      "current_cost_driver": "Assigning new requests to technicians with negative feedback, low ratings, or returns, leading to potential rework and customer dissatisfaction.",
+      "current_state": "Technicians with bad reviews, low feedback, or returns are still assigned new requests.",
+      "automation_opportunity": "Implement automatic assignment rules to exclude technicians with negative feedback, low ratings, or returns from new request assignments.",
+      "impact_type": "error_rework",
+      "metric": "Number of rework incidents or customer complaints avoided per month.",
+      "unit": "incidents/month",
+      "formula": "Rework_Avoided_Per_Month = (Rework_Rate_Per_Technician * Technicians_With_Issues * Requests_Per_Month) / Total_Requests",
+      "variables": [
+        {
+          "name": "rework_rate_per_technician",
+          "label": "Rework rate for problematic technicians",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "percentage",
+          "source": "MISSING",
+          "evidence": "Meeting states technicians with issues should not be assigned but provides no rework rate."
+        },
+        {
+          "name": "technicians_with_issues",
+          "label": "Number of technicians with negative feedback or returns",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "count",
+          "source": "MISSING",
+          "evidence": "Meeting mentions this category but provides no count."
+        },
+        {
+          "name": "requests_per_month",
+          "label": "Number of service requests per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "requests/month",
+          "source": "MISSING",
+          "evidence": "Meeting mentions daily requests but no specific monthly volume is provided."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A - No benchmark provided in meeting.",
+      "assumption_note": "Benchmark values are illustrative and not supported by the meeting.",
+      "example_calculation": "If 5 problematic technicians handle 100 requests/month with a 20% rework rate, 10 rework incidents could be avoided.",
+      "calculation_note": "Missing inputs: rework_rate_per_technician, technicians_with_issues, requests_per_month",
+      "model_calculation_note": "Result is illustrative because required input values (rework rate, count of problematic technicians, requests per month) are missing."
+    },
+    {
+      "id": "BI-04",
+      "area": "Technician Reporting",
+      "current_cost_driver": "Manual tracking and reporting of daily work activities (service requests attended, closed, charges collected, new products sold) by technicians.",
+      "current_state": "Technicians manually track and report daily activities without a graphical dashboard.",
+      "automation_opportunity": "Implement a graphical dashboard for technicians to view their daily work activities and automatically generate reports.",
+      "impact_type": "labour_time",
+      "metric": "Hours per month saved by technicians on manual reporting.",
+      "unit": "hours/month",
+      "formula": "Total_Monthly_Reporting_Hours_Saved = (Hours_Per_Technician_Per_Day * Technicians * Days_Per_Month) - (Automated_Reporting_Time * Technicians * Days_Per_Month)",
+      "variables": [
+        {
+          "name": "hours_per_technician_per_day",
+          "label": "Time spent by technician on manual reporting per day",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours",
+          "source": "MISSING",
+          "evidence": "Meeting mentions manual reporting but provides no time value."
+        },
+        {
+          "name": "technicians",
+          "label": "Number of technicians",
+          "value": 12,
+          "low_value": 10,
+          "high_value": 12,
+          "unit": "count",
+          "source": "MEETING",
+          "evidence": "There are 10 to 12 staff to handle the service."
+        },
+        {
+          "name": "days_per_month",
+          "label": "Number of working days per month",
+          "value": 30,
+          "low_value": 22,
+          "high_value": 30,
+          "unit": "days/month",
+          "source": "INDUSTRY_BENCHMARK_ESTIMATE",
+          "evidence": "Standard working days estimate."
+        },
+        {
+          "name": "automated_reporting_time",
+          "label": "Time spent on automated reporting per day",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours",
+          "source": "MISSING",
+          "evidence": "Meeting requests automated reporting but provides no time value."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "Days per month is a standard industry benchmark for working days.",
+      "assumption_note": "Benchmark values (days per month) are illustrative and not supported by the meeting.",
+      "example_calculation": "If 12 technicians spend 0.5 hours/day on manual reporting, total is 180 hours/month. With 0.1 hours/day automated, saved is 144 hours/month.",
+      "calculation_note": "Missing inputs: hours_per_technician_per_day, automated_reporting_time",
+      "model_calculation_note": "Result is illustrative because required input values (hours per technician per day, automated reporting time) are missing."
+    },
+    {
+      "id": "BI-05",
+      "area": "System Notifications",
+      "current_cost_driver": "Lack of automated email notifications for pending or overdue service requests to managers.",
+      "current_state": "Managers are not automatically notified about pending or overdue service requests.",
+      "automation_opportunity": "Implement automatic email notifications to managers for pending or overdue service requests.",
+      "impact_type": "management_overhead",
+      "metric": "Hours per month saved by managers on manual status checking.",
+      "unit": "hours/month",
+      "formula": "Total_Monthly_Manager_Hours_Saved = (Hours_Per_Check * Checks_Per_Month) - (Automated_Notifications_Time)",
+      "variables": [
+        {
+          "name": "hours_per_check",
+          "label": "Time spent by manager per manual status check",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours",
+          "source": "MISSING",
+          "evidence": "Meeting states managers need to be informed but provides no time value."
+        },
+        {
+          "name": "checks_per_month",
+          "label": "Number of manual status checks per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "checks/month",
+          "source": "MISSING",
+          "evidence": "Meeting states managers need to be informed but provides no frequency."
+        },
+        {
+          "name": "automated_notifications_time",
+          "label": "Time spent on automated notifications",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours",
+          "source": "MISSING",
+          "evidence": "Meeting requests automated notifications but provides no time value."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A - No benchmark provided in meeting.",
+      "assumption_note": "Benchmark values are illustrative and not supported by the meeting.",
+      "example_calculation": "If managers spend 0.1 hours per check and check 20 times/month, total is 2 hours/month. With automated notifications, saved is 2 hours/month.",
+      "calculation_note": "Missing inputs: hours_per_check, checks_per_month, automated_notifications_time",
+      "model_calculation_note": "Result is illustrative because required input values (hours per check, checks per month, automated notification time) are missing."
+    },
+    {
+      "id": "BI-06",
+      "area": "WhatsApp Chatbot",
+      "current_cost_driver": "Manual handling of customer inquiries via WhatsApp without an automated chatbot.",
+      "current_state": "Customer service requests are handled via mobile phone and WhatsApp without automation.",
+      "automation_opportunity": "Implement a WhatsApp chatbot for customer service requests.",
+      "impact_type": "labour_time",
+      "metric": "Hours per month saved by staff on manual WhatsApp handling.",
+      "unit": "hours/month",
+      "formula": "Total_Monthly_WhatsApp_Hours_Saved = (Hours_Per_Inquiry * Inquiries_Per_Month) - (Chatbot_Handling_Time * Inquiries_Per_Month)",
+      "variables": [
+        {
+          "name": "hours_per_inquiry",
+          "label": "Time spent by staff per WhatsApp inquiry",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours",
+          "source": "MISSING",
+          "evidence": "Meeting mentions WhatsApp chatbot but provides no time value."
+        },
+        {
+          "name": "inquiries_per_month",
+          "label": "Number of WhatsApp inquiries per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "inquiries/month",
+          "source": "MISSING",
+          "evidence": "Meeting mentions daily requests but no specific monthly volume is provided."
+        },
+        {
+          "name": "chatbot_handling_time",
+          "label": "Time spent on chatbot handling per inquiry",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours",
+          "source": "MISSING",
+          "evidence": "Meeting requests chatbot but provides no time value."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A - No benchmark provided in meeting.",
+      "assumption_note": "Benchmark values are illustrative and not supported by the meeting.",
+      "example_calculation": "If 50 inquiries/month take 0.05 hours each manually, total is 2.5 hours/month. With chatbot handling 0.01 hours each, saved is 2 hours/month.",
+      "calculation_note": "Missing inputs: hours_per_inquiry, inquiries_per_month, chatbot_handling_time",
+      "model_calculation_note": "Result is illustrative because required input values (hours per inquiry, inquiries per month, chatbot handling time) are missing."
+    }
+  ],
+  "explicit_numbers": [
+    {
+      "label": "Number of staff handling service",
+      "value": 12,
+      "unit": "count",
+      "evidence": "There are 10 to 12 staff to handle the service."
+    },
+    {
+      "label": "Estimated project cost",
+      "value": 100000,
+      "unit": "currency",
+      "evidence": "It should be within one lakh."
+    }
+  ],
+  "missing_inputs": [
+    {
+      "label": "Hours spent per manual service request",
+      "why_needed": "To calculate labour time savings from automation.",
+      "unit": "hours"
+    },
+    {
+      "label": "Number of service requests per month",
+      "why_needed": "To calculate total time, travel, or rework savings.",
+      "unit": "requests/month"
+    },
+    {
+      "label": "Average distance per service request",
+      "why_needed": "To calculate travel cost savings from optimized assignment.",
+      "unit": "km"
+    },
+    {
+      "label": "Rework rate for problematic technicians",
+      "why_needed": "To calculate error rework savings from excluding bad technicians.",
+      "unit": "percentage"
+    },
+    {
+      "label": "Number of technicians with negative feedback or returns",
+      "why_needed": "To calculate rework savings from excluding bad technicians.",
+      "unit": "count"
+    },
+    {
+      "label": "Time spent by technician on manual reporting per day",
+      "why_needed": "To calculate labour time savings from automated reporting.",
+      "unit": "hours"
+    },
+    {
+      "label": "Time spent by manager per manual status check",
+      "why_needed": "To calculate management overhead savings from automated notifications.",
+      "unit": "hours"
+    },
+    {
+      "label": "Number of manual status checks per month",
+      "why_needed": "To calculate management overhead savings from automated notifications.",
+      "unit": "checks/month"
+    },
+    {
+      "label": "Time spent by staff per WhatsApp inquiry",
+      "why_needed": "To calculate labour time savings from WhatsApp chatbot.",
+      "unit": "hours"
+    },
+    {
+      "label": "Number of WhatsApp inquiries per month",
+      "why_needed": "To calculate labour time savings from WhatsApp chatbot.",
+      "unit": "inquiries/month"
+    }
+  ],
+  "analysis_notes": [
+    "The meeting provides a clear business case for automating service request handling, technician assignment, and reporting, but lacks specific numeric data to calculate actual cost savings.",
+    "The project cost of 100,000 is a development/implementation cost, not an operational saving, and should not be used to calculate ROI without additional benefit data.",
+    "All opportunities are illustrative scenarios due to missing input values; no guaranteed savings can be calculated from the meeting transcript.",
+    "The business is an HVAC service company with 10-12 staff, handling AC service requests manually with significant time consumption."
+  ]
+}

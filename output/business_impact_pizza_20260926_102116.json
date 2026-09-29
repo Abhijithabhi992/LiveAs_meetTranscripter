@@ -1,0 +1,15 @@
+{
+  "business_profile": {
+    "industry": "None",
+    "business_summary": "The provided transcript is incomplete, consisting only of a greeting exchange ('Hello. Hello hello') with no substantive discussion of business processes, customer requirements, or operational details."
+  },
+  "current_processes": [],
+  "opportunities": [],
+  "explicit_numbers": [],
+  "missing_inputs": [],
+  "analysis_notes": [
+    "The transcript is too brief to extract any business processes, pain points, or automation opportunities.",
+    "No customer requirements or operational context is provided in the meeting transcript.",
+    "As per the rules, opportunities cannot be created merely because they sound commercially useful, and no generic industry benchmarks should be used."
+  ]
+}

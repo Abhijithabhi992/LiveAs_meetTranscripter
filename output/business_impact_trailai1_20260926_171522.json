@@ -1,0 +1,230 @@
+{
+  "business_profile": {
+    "industry": "None",
+    "business_summary": "The client operates a business involving Maintenance Contracts (AMC) and Management Contracts (MC), requiring staff assignment, service report dispatch, and location-based connectivity with service agencies."
+  },
+  "current_processes": [
+    {
+      "area": "Staff Assignment",
+      "current_state": "Staff are manually assigned to MC within an admin interface.",
+      "pain_point": "Manual assignment process is implied to be inefficient or not streamlined.",
+      "evidence": "Client: 'The staff should be able to be assigned to it [MC].'"
+    },
+    {
+      "area": "Service Reporting",
+      "current_state": "Service reports are manually sent to clients.",
+      "pain_point": "Manual sending of service reports is time-consuming and prone to delays.",
+      "evidence": "Client: 'Need to send the service report.' and 'A service report must be sent.'"
+    },
+    {
+      "area": "Agency Coordination",
+      "current_state": "Service agencies are not connected location-based, requiring manual coordination.",
+      "pain_point": "Lack of location-based connection with service agencies creates operational friction.",
+      "evidence": "Client: 'Our service agency next door should be connected location-based.'"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "BI-01",
+      "area": "Service Reporting",
+      "current_cost_driver": "Manual dispatch of service reports via unspecified channels.",
+      "current_state": "Service reports are sent manually to clients.",
+      "automation_opportunity": "Integrate a WhatsApp chatbot to automate service report delivery.",
+      "impact_type": "processing_time",
+      "metric": "Time saved per service report sent",
+      "unit": "minutes",
+      "formula": "(Current_Manual_Time + Setup_Time) - (Automated_Time + Setup_Time) = Time_Saved_Per_Report",
+      "variables": [
+        {
+          "name": "current_manual_time_per_report",
+          "label": "Current time to manually send a service report",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "minutes",
+          "source": "MISSING",
+          "evidence": "No time estimates provided in the meeting."
+        },
+        {
+          "name": "automated_time_per_report",
+          "label": "Time to send a service report via WhatsApp chatbot",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "minutes",
+          "source": "MISSING",
+          "evidence": "No time estimates provided in the meeting."
+        },
+        {
+          "name": "reports_per_month",
+          "label": "Number of service reports sent per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "reports/month",
+          "source": "MISSING",
+          "evidence": "No transaction volume or frequency provided in the meeting."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "Industry benchmarks for manual vs. automated report dispatch are not used as per instructions.",
+      "assumption_note": "Time values are illustrative placeholders; actual values are missing.",
+      "example_calculation": "Example: If current_manual_time_per_report = 5 minutes, automated_time_per_report = 1 minute, and reports_per_month = 100, then total monthly time saved = (5 - 1) * 100 = 400 minutes.",
+      "calculation_note": "Missing inputs: current_manual_time_per_report, automated_time_per_report, reports_per_month",
+      "model_calculation_note": "The result is illustrative only because all input variables are missing from the meeting. No guaranteed savings can be calculated."
+    },
+    {
+      "id": "BI-02",
+      "area": "Staff Assignment",
+      "current_cost_driver": "Manual assignment of staff to MC within admin.",
+      "current_state": "Staff assignment is done manually in an admin system.",
+      "automation_opportunity": "Automated staff assignment to MC based on location or availability.",
+      "impact_type": "labour_time",
+      "metric": "Time saved per assignment",
+      "unit": "minutes",
+      "formula": "(Manual_Assignment_Time + Verification_Time) - (Automated_Assignment_Time + Verification_Time) = Time_Saved_Per_Assignment",
+      "variables": [
+        {
+          "name": "manual_assignment_time",
+          "label": "Time to manually assign staff to MC",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "minutes",
+          "source": "MISSING",
+          "evidence": "No time estimates provided in the meeting."
+        },
+        {
+          "name": "automated_assignment_time",
+          "label": "Time to automate staff assignment to MC",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "minutes",
+          "source": "MISSING",
+          "evidence": "No time estimates provided in the meeting."
+        },
+        {
+          "name": "assignments_per_month",
+          "label": "Number of staff assignments per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "assignments/month",
+          "source": "MISSING",
+          "evidence": "No volume of assignments provided in the meeting."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "Industry benchmarks for manual vs. automated assignment are not used as per instructions.",
+      "assumption_note": "Time values are illustrative placeholders; actual values are missing.",
+      "example_calculation": "Example: If manual_assignment_time = 10 minutes, automated_assignment_time = 2 minutes, and assignments_per_month = 50, then total monthly time saved = (10 - 2) * 50 = 400 minutes.",
+      "calculation_note": "Missing inputs: manual_assignment_time, automated_assignment_time, assignments_per_month",
+      "model_calculation_note": "The result is illustrative only because all input variables are missing from the meeting. No guaranteed savings can be calculated."
+    },
+    {
+      "id": "BI-03",
+      "area": "Agency Coordination",
+      "current_cost_driver": "Manual coordination with service agencies due to lack of location-based connectivity.",
+      "current_state": "Service agencies are not connected location-based.",
+      "automation_opportunity": "Implement location-based connection with service agencies.",
+      "impact_type": "communication_cost",
+      "metric": "Reduction in coordination time or errors",
+      "unit": "minutes/month",
+      "formula": "(Current_Coordination_Time * Frequency) - (New_Coordination_Time * Frequency) = Time_Saved_Per_Month",
+      "variables": [
+        {
+          "name": "current_coordination_time",
+          "label": "Time spent on manual coordination with agencies",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "minutes",
+          "source": "MISSING",
+          "evidence": "No time estimates provided in the meeting."
+        },
+        {
+          "name": "new_coordination_time",
+          "label": "Time spent on automated location-based coordination",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "minutes",
+          "source": "MISSING",
+          "evidence": "No time estimates provided in the meeting."
+        },
+        {
+          "name": "coordination_frequency",
+          "label": "Frequency of agency coordination per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "events/month",
+          "source": "MISSING",
+          "evidence": "No frequency of coordination provided in the meeting."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "Industry benchmarks for manual vs. automated coordination are not used as per instructions.",
+      "assumption_note": "Time values are illustrative placeholders; actual values are missing.",
+      "example_calculation": "Example: If current_coordination_time = 30 minutes, new_coordination_time = 5 minutes, and coordination_frequency = 20 events/month, then total monthly time saved = (30 - 5) * 20 = 500 minutes.",
+      "calculation_note": "Missing inputs: current_coordination_time, new_coordination_time, coordination_frequency",
+      "model_calculation_note": "The result is illustrative only because all input variables are missing from the meeting. No guaranteed savings can be calculated."
+    }
+  ],
+  "explicit_numbers": [
+    {
+      "label": "Time to manually send a service report (estimated)",
+      "value": null,
+      "unit": "minutes",
+      "evidence": "Not provided in the meeting; only discussed as a pain point."
+    }
+  ],
+  "missing_inputs": [
+    {
+      "label": "Number of service reports sent per month",
+      "why_needed": "Required to calculate total time or cost savings from WhatsApp chatbot automation.",
+      "unit": "reports/month"
+    },
+    {
+      "label": "Number of staff assignments per month",
+      "why_needed": "Required to calculate total labour time savings from automated staff assignment.",
+      "unit": "assignments/month"
+    },
+    {
+      "label": "Number of agency coordination events per month",
+      "why_needed": "Required to calculate total time or cost savings from location-based agency connection.",
+      "unit": "events/month"
+    },
+    {
+      "label": "Time to manually send a service report",
+      "why_needed": "Required to calculate per-report time savings.",
+      "unit": "minutes"
+    },
+    {
+      "label": "Time to automate staff assignment",
+      "why_needed": "Required to calculate per-assignment time savings.",
+      "unit": "minutes"
+    },
+    {
+      "label": "Time spent on manual agency coordination",
+      "why_needed": "Required to calculate per-event time savings.",
+      "unit": "minutes"
+    }
+  ],
+  "analysis_notes": [
+    "The meeting transcript contains only high-level requirements and pain points without any quantitative data (e.g., volumes, time durations, costs).",
+    "The requested WhatsApp chatbot integration and location-based agency connection are proposed improvements, but the transcript does not provide enough information to calculate actual business savings or ROI.",
+    "No industry benchmarks were used, and no generic assumptions were made about transaction volumes or time savings.",
+    "All opportunities are based on the client's stated problems and requested automations, but the results are illustrative scenarios due to missing inputs."
+  ]
+}

@@ -1,0 +1,255 @@
+[00:05] You: Hello
+[00:08] You: Yes
+[00:08] Client: Ah, one minute.
+[00:10] Client: Is it ready there?
+[00:11] You: Ah, it's okay here.
+[00:13] Client: One minute.
+[00:18] Client: Let's close this door.
+[00:25] Client: What
+[00:26] Client: There was a faction.
+[00:27] Client: Yes, that's it.
+[00:29] Client: Agyal Kiyamojith
+[00:30] You: I can hear you, sir.
+[00:31] Client: Okay.
+[00:33] Client: Then start.
+[00:35] You: Okay.
+[00:38] Client: What is the matter?
+[00:42] You: Sir, we were a software development company.
+[00:48] You: What kind of project did you need, sir? What were your requirements?
+[00:49] You: If you could just say it.
+[00:51] Client: What is this for us?
+[00:53] Client: Air conditioned.
+[00:53] Client: It is software.
+[00:55] You: Okay.
+[00:57] Client: It is a software that services ACs and all.
+[00:59] You: Okay.
+[01:01] Client: So, for that, we can now have a
+[01:04] Client: There are 10 to 12 staff to handle the service.
+[01:06] You: Okay.
+[01:08] Client: So, the problem now is this service.
+[01:10] Client: For the technicians.
+[01:13] Client: There will be service requests, right?
+[01:15] You: Okay.
+[01:15] Client: Complaints.
+[01:16] Client: At the time of coming
+[01:19] Client: Automatically, if it happens like this now, then
+[01:22] Client: Let's have a
+[01:23] Client: There is a mobile phone.
+[01:24] Client: To that phone
+[01:26] Client: Customer with requests as you like.
+[01:26] Client: Customers like this
+[01:27] Client: Let it be. Daily one
+[01:29] Client: 10, 21.
+[01:29] Client: Crisp is happening.
+[01:30] Client: Then
+[01:31] You: Okay.
+[01:33] Client: Once these requests come in,
+[01:34] Client: Sitting behind where we were sitting
+[01:36] Client: Should handle.
+[01:38] Client: Who all can assign this?
+[01:43] Client: And then the information in this needs to be informed, and then it needs to be tracked.
+[01:45] Client: Where did it reach? Is it done? Is it finished?
+[01:46] Client: So, in the evening.
+[01:50] Client: There is a first cut tracking for lunch. Evening
+[01:50] Client: There is traction.
+[01:52] Client: So, this needs to be followed up like this.
+[01:54] Client: What service is done in this?
+[01:55] Client: We are behind this.
+[01:56] Client: Okay?
+[01:57] Client: So, like that one
+[02:01] Client: There are difficulties in handling and a lot of time is being spent on it.
+[02:04] Client: For that, a service request handling a
+[02:07] Client: It means a system. That is, completely automated.
+[02:11] Client: From the moment the service requests are raised
+[02:14] Client: This is follow-up and MAS.
+[02:16] Client: Which cases are pending?
+[02:18] Client: Saying things like that.
+[02:19] Client: Similarly.
+[02:21] Client: A service request within a year.
+[02:23] Client: If it doesn't close.
+[02:24] Client: That
+[02:25] Client: Hmm.
+[02:27] Client: In ways that the manager receives emails.
+[02:27] Client: Needed.
+[02:30] Client: This is basically what is needed.
+[02:32] You: Okay
+[02:32] You: Okay.
+[02:40] You: So, if we want to do that, we can create a software, that is, a web application. Within that, we can provide options like staff and admin.
+[02:47] You: Similarly, within that, now, that is, to assign, that is, to assign a job and its status update, or...
+[02:48] You: What sir mainly needs.
+[02:52] Client: What is needed is all the things related to updating the status.
+[02:53] You: Okay.
+[02:54] Client: Similarly.
+[02:54] You: Yes
+[02:55] Client: Another
+[02:56] Client: One thing is that
+[02:57] Client: Now
+[02:57] Client: Now.
+[03:00] Client: A service requests.
+[03:03] Client: Before we assign it now,
+[03:10] Client: You mentioned automatically assigning, right? This automatic assignment should happen. Manual is not needed, automatic assignment should happen.
+[03:11] You: It is there.
+[03:11] Client: Now
+[03:11] You: Okay.
+[03:13] Client: While the assignment is happening
+[03:13] Client: Ah...
+[03:16] Client: There are a few conditions, that is.
+[03:16] Client: Okay.
+[03:18] Client: This customer's location.
+[03:21] Client: After fetching, which location is it?
+[03:25] Client: It needs to be mapped to the location of the technician in that area.
+[03:26] Client: A little later.
+[03:27] Client: Hmm.
+[03:29] Client: Which technician is it?
+[03:29] Client: Before this.
+[03:31] Client: Worked the same way.
+[03:37] Client: If any technician, as a technician, says that the customer has any issues or conflicts...
+[03:38] Client: Uh, neck.
+[03:39] Client: Bad reviews.
+[03:42] Client: Are you giving any feedback, negative feedback?
+[03:43] Client: Low feedback.
+[03:47] Client: If someone has given a return, then they should not be assigned.
+[03:47] Client: Now that
+[03:49] Client: Currently in the fleet
+[03:51] Client: This so-called technician.
+[03:52] Client: Existing.
+[03:54] Client: Area sensed.
+[03:57] Client: That's how the assignment should happen.
+[03:59] You: Off.
+[04:00] You: Okay, that is, we have a nearby
+[04:10] You: If you are a service agent, you should be assigned. That is, their status, that is, if they have gone somewhere before and want bad reviews, if they have a negative impression, they should not be assigned.
+[04:11] You: It should be assigned like that.
+[04:11] Client: Maple
+[04:17] Client: Like this, assignment. And then after that, in the morning, they mark the attendance and they already have some assignments.
+[04:19] Client: It would have been automatically assigned.
+[04:20] You: Okay.
+[04:20] Client: Then
+[04:22] Client: So, for example,
+[04:24] Client: In the Chinnakada region
+[04:25] Client: A little.
+[04:25] Client: Fire.
+[04:28] Client: If two requests are assigned
+[04:31] Client: If a third request comes in Chinnakkada itself,
+[04:32] Client: Seven.
+[04:36] Client: If the requests in Chinnakada have not been closed,
+[04:39] Client: He looked at the location.
+[04:41] Client: People in that Chinnakkal
+[04:43] Client: It should be assigned to the people.
+[04:43] Client: For example, if we were to say, a
+[04:45] Client: A cast, a
+[04:45] Client: Technician.
+[04:49] Client: Shyam, the technician, already has two assigned.
+[04:51] Client: Now, a new request has come.
+[04:53] Client: So, if it is Shyam, he is currently standing in Chinnakada.
+[04:59] Client: So, if that's the case, Shyam, now in two request assignments, is one complete, or are two complete?
+[05:01] Client: Need to check once. Anyone else?
+[05:03] Client: If there is another Chinnakad region as well.
+[05:05] Client: He is completing two.
+[05:06] Client: Or one of its
+[05:08] Client: We need to check based on the time period.
+[05:13] Client: The assignment should be executed efficiently by using some kind of algorithm over a time period.
+[05:13] Client: Understood?
+[05:14] You: Okay
+[05:16] You: That is, now
+[05:20] You: Now, if someone goes, if Shyam goes and it's Shyam, then there are three of them now.
+[05:25] Client: Yes
+[05:25] You: If it is not possible, then the next person should be able to assign it to Shyam, that is.
+[05:27] Client: Not Jamil.
+[05:27] You: That request should be assigned to someone else.
+[05:28] Client: Captain
+[05:30] You: Ah, okay.
+[05:30] Client: The computer should be automatically assigned.
+[05:31] You: Okay, okay.
+[05:31] Client: It will be. At the time the request is raised itself.
+[05:33] Client: Shyam or whoever is there
+[05:36] Client: That is correctly, intelligently.
+[05:37] Client: It should happen in Assam.
+[05:38] You: Okay.
+[05:42] Client: That doesn't require any AI. In a normal way.
+[05:42] Client: Just do it like this.
+[05:43] Client: Intelligently.
+[05:45] You: Okay sir.
+[05:46] Client: Let's check it.
+[05:48] Client: That one.
+[05:49] You: Ah, that.
+[05:52] Client: Then, if another case is needed,
+[05:54] Client: To the technicians.
+[05:55] Client: Hmm.
+[05:58] Client: Of technicians
+[05:59] Client: Daily
+[06:02] Client: Work activities.
+[06:03] Client: That
+[06:06] Client: In a graphical way, as an MS
+[06:08] Client: Isn't it the same end?
+[06:09] Client: Of the rate
+[06:13] Client: There is a particular mail ID in the office. You need to leave that mail ID. That is, each technician.
+[06:16] Client: What all did you do that day?
+[06:19] Client: How many service requests were attended?
+[06:22] Client: How many were closed, how many service charges were collected?
+[06:22] Client: How much?
+[06:24] Client: New product
+[06:24] Client: Sold.
+[06:26] Client: All the details and things like that.
+[06:28] Client: We need another system in a different way.
+[06:29] You: Okay.
+[06:32] Client: This is basically what we need.
+[06:33] Client: Requirement.
+[06:34] Client: So, how much will this be?
+[06:34] You: Okay, because it's different.
+[06:35] You: Yes
+[06:38] You: Sir.
+[06:38] Client: I didn't hear.
+[06:44] You: Did Sir have any other requirements to add to this at that time? We were giving it completely customized.
+[06:45] You: What is that for sir?
+[06:48] You: If we needed to make changes to this, we would have done it according to what was mentioned in it.
+[06:52] Client: Our main issue right now is these service requests.
+[06:57] Client: Handle it. It takes a lot of time for that. There is a dedicated staff. Once this is completely automated...
+[07:00] Client: I got a great peace of mind.
+[07:05] Client: To utilize that particular staff for other good jobs and other things, and all.
+[07:06] Client: Possible.
+[07:07] You: Okay.
+[07:10] Client: So, this is the main headache, currently the main headache is this.
+[07:11] You: Okay.
+[07:12] Client: This is the system I need to solve now.
+[07:13] Client: What is needed.
+[07:15] You: Okay.
+[07:15] Client: Let's look at the rest later.
+[07:18] Client: How much have you worked out this?
+[07:21] Client: We are doing servicing and other things for this in a better way.
+[07:25] Client: Now, after looking at it, what I mean is, about the rest of the automation things.
+[07:26] Client: Let's discuss.
+[07:28] Client: So, how much amount will come for this?
+[07:30] Client: Investment will come. Other things of this.
+[07:31] Client: How much?
+[07:32] Client: How is the future?
+[07:34] Client: How is its case, maintenance?
+[07:36] Client: Or what will be the cost, what will be the expense?
+[07:40] Client: And then, if there is a service issue with your service,
+[07:45] Client: What issues can arise, how to handle them, and how are you going to handle them?
+[07:47] Client: Also, an idea about that.
+[07:48] Client: Let's talk.
+[07:49] Client: Understood?
+[07:54] You: Sir, we are getting the payment, we need to fetch the requirements for the payment correctly.
+[07:56] You: I will tell you the correct payment as a proposal from Sir.
+[07:57] Client: Okay, fine.
+[07:57] You: Aa Aa
+[07:59] You: Similarly, similarly.
+[08:01] You: Approximately one
+[08:04] You: It should be within one lakh.
+[08:06] Client: Okay.
+[08:06] You: Ah, similarly.
+[08:12] You: We are not doing server inside that now. If sir has a server, we can host it. If not,
+[08:16] You: Sir, we are providing another server, but it will be an additional amount.
+[08:18] Client: Yes, yes.
+[08:20] You: Okay.
+[08:22] Client: Yes, we can look at that, it's okay. Just consider it as a write-up of the whole thing.
+[08:23] You: Okay.
+[08:25] Client: Write black and white and send it to me.
+[08:26] Client: Let me study that then.
+[08:27] Client: Let's see.
+[08:28] Client: Okay.
+[08:29] You: Okay sir, okay.
+[08:30] Client: Okay, thank you.
+[08:31] You: Okay, thank you sir.
+[08:32] Client: i also need a whatsapp chatbot implementation also
+[08:30] Client: its about hvac.

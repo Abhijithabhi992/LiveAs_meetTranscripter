@@ -1,0 +1,16 @@
+{
+  "business_profile": {
+    "industry": "Not specified",
+    "business_summary": "No business process or meeting context was provided in the transcript. The transcript consists of a single, out-of-context technical question."
+  },
+  "current_processes": [],
+  "opportunities": [],
+  "explicit_numbers": [],
+  "missing_inputs": [],
+  "analysis_notes": [
+    "The provided transcript does not contain a customer meeting or any business process discussion. It consists of a single, isolated technical question ('What is the meaning of concatenation?').",
+    "As a result, there are no current processes, pain points, requested automations, or measurable business impacts that can be extracted or analyzed.",
+    "The business profile is marked as 'Not specified' because the transcript does not support any industry or business summary.",
+    "The opportunities array is empty because no business-process analysis can be performed on the given text."
+  ]
+}

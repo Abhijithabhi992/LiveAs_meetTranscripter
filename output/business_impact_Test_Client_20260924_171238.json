@@ -1,0 +1,199 @@
+{
+  "business_profile": {
+    "industry": "HVAC Service and Maintenance",
+    "business_summary": "An AC service company with 10 to 12 staff members who handle incoming service requests and complaints manually, leading to tracking, assignment, and reporting inefficiencies."
+  },
+  "current_processes": [
+    {
+      "area": "Service Request Handling",
+      "current_state": "Service requests and complaints are handled manually by sitting behind a desk, tracking physical status updates (done/finished/pending), and assigning work manually.",
+      "pain_point": "Handling requests manually consumes a lot of time and is a dedicated staff's main headache.",
+      "evidence": "There are 10 to 12 staff to handle the service... There are difficulties in handling and a lot of time is being spent on it."
+    },
+    {
+      "area": "Technician Assignment",
+      "current_state": "New service requests are manually assigned to technicians based on their current location and availability, without considering their workload or negative feedback.",
+      "pain_point": "Manual assignment is inefficient and can lead to overloading a technician or assigning a technician with a negative feedback history.",
+      "evidence": "Before we assign it now... This automatic assignment should happen. Manual is not needed... If any technician... says that the customer has any issues or conflicts... Bad reviews... If someone has given a return, then they should not be assigned."
+    },
+    {
+      "area": "Technician Reporting",
+      "current_state": "Technicians do not receive automated daily reports of their work activities, service requests attended, closed, service charges collected, and new products sold.",
+      "pain_point": "Lack of automated reporting makes it difficult for technicians to track their daily performance and for managers to track service requests via email.",
+      "evidence": "Daily... Work activities... What all did you do that day? How many service requests were attended? How many were closed, how many service charges were collected? New product Sold."
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "BI-01",
+      "area": "Service Request Handling",
+      "current_cost_driver": "Manual tracking and updating of service request statuses consumes significant staff time.",
+      "current_state": "Staff manually track the status of service requests (where it reached, if it is done or finished) and handle complaints.",
+      "automation_opportunity": "Implement a software system to automatically track and update the status of service requests.",
+      "impact_type": "processing_time",
+      "metric": "hours saved per month on manual status tracking",
+      "unit": "hours/month",
+      "formula": "Total_Manual_Tracking_Time_Per_Request * Number_Of_Requests_Per_Month",
+      "variables": [
+        {
+          "name": "total_manual_tracking_time_per_request",
+          "label": "time spent manually tracking one service request",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours",
+          "source": "MISSING",
+          "evidence": "Meeting does not specify the exact time spent per request."
+        },
+        {
+          "name": "number_of_requests_per_month",
+          "label": "number of service requests handled per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "requests",
+          "source": "MISSING",
+          "evidence": "Meeting does not specify the monthly volume of requests."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "Industry benchmark for manual vs automated tracking in field service management.",
+      "assumption_note": "Benchmark values are illustrative; actual savings depend on current manual process complexity.",
+      "calculation_note": "Missing inputs: total_manual_tracking_time_per_request, number_of_requests_per_month",
+      "model_calculation_note": "Cannot calculate savings without knowing the time spent per request and the monthly request volume."
+    },
+    {
+      "id": "BI-02",
+      "area": "Technician Assignment",
+      "current_cost_driver": "Manual assignment of service requests to technicians is inefficient and leads to suboptimal resource utilization.",
+      "current_state": "Service requests are manually assigned to technicians based on their current location and availability, without considering their current workload or negative feedback.",
+      "automation_opportunity": "Implement an automated assignment algorithm that matches service requests to technicians based on location, current workload, and feedback history.",
+      "impact_type": "resource_utilization",
+      "metric": "percentage of technicians optimally utilized",
+      "unit": "percentage",
+      "formula": "Number_Of_Technicians_With_Optimal_Load / Total_Number_Of_Technicians * 100",
+      "variables": [
+        {
+          "name": "number_of_technicians_with_optimal_load",
+          "label": "number of technicians with an optimal number of assignments",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "technicians",
+          "source": "MISSING",
+          "evidence": "Meeting does not specify the current number of technicians with an optimal load."
+        },
+        {
+          "name": "total_number_of_technicians",
+          "label": "total number of technicians",
+          "value": 12,
+          "low_value": 10,
+          "high_value": 12,
+          "unit": "technicians",
+          "source": "MEETING",
+          "evidence": "There are 10 to 12 staff to handle the service."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "Industry benchmark for optimal technician load balancing.",
+      "assumption_note": "Benchmark values are illustrative; actual utilization depends on current assignment practices.",
+      "calculation_note": "Missing inputs: number_of_technicians_with_optimal_load",
+      "model_calculation_note": "Cannot calculate the percentage of optimally utilized technicians without knowing how many currently have an optimal load."
+    },
+    {
+      "id": "BI-03",
+      "area": "Technician Reporting",
+      "current_cost_driver": "Lack of automated daily reports for technicians leads to manual reporting and tracking efforts.",
+      "current_state": "Technicians do not receive automated daily reports detailing their work activities, service requests attended, closed, service charges collected, and new products sold.",
+      "automation_opportunity": "Implement a system to generate and send automated daily reports to technicians and managers.",
+      "impact_type": "reporting_time",
+      "metric": "hours saved per month on manual reporting",
+      "unit": "hours/month",
+      "formula": "Total_Manual_Reporting_Time_Per_Technician * Number_Of_Technicians * Number_Of_Days_Per_Month",
+      "variables": [
+        {
+          "name": "total_manual_reporting_time_per_technician",
+          "label": "time spent manually compiling daily report",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours",
+          "source": "MISSING",
+          "evidence": "Meeting does not specify the time spent on manual reporting."
+        },
+        {
+          "name": "number_of_technicians",
+          "label": "total number of technicians",
+          "value": 12,
+          "low_value": 10,
+          "high_value": 12,
+          "unit": "technicians",
+          "source": "MEETING",
+          "evidence": "There are 10 to 12 staff to handle the service."
+        },
+        {
+          "name": "number_of_days_per_month",
+          "label": "number of working days in a month",
+          "value": 30,
+          "low_value": 22,
+          "high_value": 30,
+          "unit": "days",
+          "source": "INDUSTRY_BENCHMARK_ESTIMATE",
+          "evidence": "Standard working days in a month."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "Industry benchmark for manual vs automated reporting in field service management.",
+      "assumption_note": "Benchmark values are illustrative; actual savings depend on current manual process complexity.",
+      "calculation_note": "Missing inputs: total_manual_reporting_time_per_technician",
+      "model_calculation_note": "Cannot calculate savings without knowing the time spent on manual reporting per technician."
+    }
+  ],
+  "explicit_numbers": [
+    {
+      "label": "number of staff handling service",
+      "value": 12,
+      "unit": "staff",
+      "evidence": "There are 10 to 12 staff to handle the service."
+    }
+  ],
+  "missing_inputs": [
+    {
+      "label": "number of service requests per month",
+      "why_needed": "Required to calculate the time saved on manual tracking.",
+      "unit": "requests"
+    },
+    {
+      "label": "time spent manually tracking one service request",
+      "why_needed": "Required to calculate the time saved on manual tracking.",
+      "unit": "hours"
+    },
+    {
+      "label": "number of technicians with an optimal load",
+      "why_needed": "Required to calculate the percentage of optimally utilized technicians.",
+      "unit": "technicians"
+    },
+    {
+      "label": "time spent manually compiling daily report per technician",
+      "why_needed": "Required to calculate the time saved on manual reporting.",
+      "unit": "hours"
+    }
+  ],
+  "analysis_notes": [
+    "The meeting transcript is fragmented and contains some unclear phrases (e.g., 'Crisp is happening', 'There was a faction'), but the core business requirements are discernible.",
+    "The client explicitly mentions that the main issue is the manual handling of service requests, which takes a lot of time.",
+    "The client requests an automated assignment system based on technician location, availability, and feedback history.",
+    "The client also requests automated daily reports for technicians and managers, including service requests attended, closed, charges collected, and new products sold.",
+    "The client mentions the possibility of utilizing the dedicated staff for other jobs once the service request handling is automated.",
+    "The client also mentions the need for a WhatsApp chatbot implementation, but no specific business impact or process details are provided for this in the transcript."
+  ]
+}

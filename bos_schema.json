@@ -1,0 +1,368 @@
+{
+  "types_of_logins": [
+    "Admin login",
+    "Staff login"
+  ],
+  "basic_data": [
+    "Customer data",
+    "Lead data",
+    "Products data",
+    "Parts data",
+    "Service category data",
+    "Service sub-category and issues data",
+    "Employee data",
+    "Department data"
+  ],
+  "customer_management": [
+    {
+      "id": "CM-01",
+      "feature": "Add a customer manually"
+    },
+    {
+      "id": "CM-02",
+      "feature": "Bulk upload of customer data"
+    },
+    {
+      "id": "CM-03",
+      "feature": "View customer data and modify"
+    }
+  ],
+  "human_resources": [
+    {
+      "id": "HR-01",
+      "feature": "Create departments"
+    },
+    {
+      "id": "HR-02",
+      "feature": "Add a new staff and map departments"
+    },
+    {
+      "id": "HR-03",
+      "feature": "View added staffs' details and modify"
+    },
+    {
+      "id": "HR-04",
+      "feature": "Enable geo-location-based attendance using Google API"
+    },
+    {
+      "id": "HR-05",
+      "feature": "Restrict staff access by admin"
+    },
+    {
+      "id": "HR-06",
+      "feature": "Staff can mark attendance and leaves"
+    },
+    {
+      "id": "HR-07",
+      "feature": "Admin can approve attendance and leave"
+    },
+    {
+      "id": "HR-08",
+      "feature": "Download Excel on attendance and leave taken month wise by admin"
+    },
+    {
+      "id": "HR-09",
+      "feature": "Regularise attendance for any changes for the approved cases"
+    },
+    {
+      "id": "HR-10",
+      "feature": "Admin approve the regularisation requests for changes in attendance and leave"
+    }
+  ],
+  "products_management": [
+    {
+      "id": "PR-01",
+      "feature": "Add a product category"
+    },
+    {
+      "id": "PR-02",
+      "feature": "Add a product and map its category"
+    },
+    {
+      "id": "PR-03",
+      "feature": "Add spare parts under products"
+    },
+    {
+      "id": "PR-04",
+      "feature": "View added products"
+    },
+    {
+      "id": "PR-05",
+      "feature": "Allot spare parts to staffs"
+    },
+    {
+      "id": "PR-06",
+      "feature": "View / Excel for part allotment to staff details"
+    },
+    {
+      "id": "PR-07",
+      "feature": "Download stock details"
+    }
+  ],
+  "sales_management": [
+    {
+      "id": "SA-01",
+      "feature": "Add leads manually"
+    },
+    {
+      "id": "SA-02",
+      "feature": "Add leads automatically and real time using API facility"
+    },
+    {
+      "id": "SA-03",
+      "feature": "View and modify all leads"
+    },
+    {
+      "id": "SA-04",
+      "feature": "Lead classification (sales funnel)"
+    },
+    {
+      "id": "SA-05",
+      "feature": "Enter follow up details for leads and manage"
+    },
+    {
+      "id": "SA-06",
+      "feature": "AI based approach suggestion tool"
+    },
+    {
+      "id": "SA-07",
+      "feature": "Lead mapping to others by admin"
+    },
+    {
+      "id": "SA-08",
+      "feature": "Add deals"
+    },
+    {
+      "id": "SA-09",
+      "feature": "Add quotations"
+    },
+    {
+      "id": "SA-10",
+      "feature": "Approve quotation by admin"
+    },
+    {
+      "id": "SA-11",
+      "feature": "View and search old quotations"
+    },
+    {
+      "id": "SA-12",
+      "feature": "Quotation shares by email and WhatsApp with prospects automatically on creation"
+    },
+    {
+      "id": "SA-13",
+      "feature": "Auto reminder in WhatsApp and email for scheduled calls before call with details"
+    },
+    {
+      "id": "SA-14",
+      "feature": "Schedule meeting with prospects and clients with automated WhatsApp message"
+    },
+    {
+      "id": "SA-15",
+      "feature": "Add incentive conditions – value based"
+    },
+    {
+      "id": "SA-16",
+      "feature": "Generate incentive value automatically on deal closures"
+    },
+    {
+      "id": "SA-17",
+      "feature": "Download sales MIS Excel with filter features comprehensive"
+    },
+    {
+      "id": "SA-18",
+      "feature": "View performance graphs of employees and chart downloadable"
+    },
+    {
+      "id": "SA-19",
+      "feature": "Sales staff location tracking using Google APIs"
+    },
+    {
+      "id": "SA-20",
+      "feature": "Auto flagging of location tracking when staff is delayed"
+    },
+    {
+      "id": "SA-21",
+      "feature": "View and download staff location activities in Excel format for each month"
+    },
+    {
+      "id": "SA-22",
+      "feature": "Option to staff to mark location data (started, reached, meet completed)"
+    },
+    {
+      "id": "SA-23",
+      "feature": "Send bulk marketing messages with easy segmenting using WhatsApp API"
+    },
+    {
+      "id": "SA-24",
+      "feature": "Location based marketing messages upon new customer registration"
+    },
+    {
+      "id": "SA-25",
+      "feature": "Add expenses by staffs with bill attachments"
+    },
+    {
+      "id": "SA-26",
+      "feature": "Approve expenses by admin"
+    },
+    {
+      "id": "SA-27",
+      "feature": "Download expenses monthly by admin in Excel format"
+    }
+  ],
+  "project_management": [
+    {
+      "id": "PJ-01",
+      "feature": "Add new projects – amount, start end date"
+    },
+    {
+      "id": "PJ-02",
+      "feature": "Add project's payments"
+    },
+    {
+      "id": "PJ-03",
+      "feature": "Edit the payment entered details"
+    },
+    {
+      "id": "PJ-04",
+      "feature": "Enter and upload photo of site visit details with date"
+    },
+    {
+      "id": "PJ-05",
+      "feature": "Option to assign staff to project by admin – staff can then access project"
+    },
+    {
+      "id": "PJ-06",
+      "feature": "Mark project status by admin - assigned, site visit, materials requirement, delivered, installation, payment, completed"
+    },
+    {
+      "id": "PJ-07",
+      "feature": "Assigned staff can change the project status also when work is done by them"
+    },
+    {
+      "id": "PJ-08",
+      "feature": "Project activity history to show the activities done by staff with date"
+    },
+    {
+      "id": "PJ-09",
+      "feature": "Option to upload reports documents for each projects"
+    },
+    {
+      "id": "PJ-10",
+      "feature": "Can add materials needed for the project work"
+    },
+    {
+      "id": "PJ-11",
+      "feature": "Can update/track material PO status – ordered, available, delivered at site"
+    },
+    {
+      "id": "PJ-12",
+      "feature": "Download project MIS for all the details like total cost, total material cost, total paid, outstanding for the project, current project status, pending with staff name etc"
+    }
+  ],
+  "service_management": [
+    {
+      "id": "SM-01",
+      "feature": "Add service category, sub category, issues"
+    },
+    {
+      "id": "SM-02",
+      "feature": "Create service requests by customer"
+    },
+    {
+      "id": "SM-03",
+      "feature": "Create request by admin directly in the software"
+    },
+    {
+      "id": "SM-04",
+      "feature": "View service requests raised and assign to staffs"
+    },
+    {
+      "id": "SM-05",
+      "feature": "Staff can view assigned requests and prepare service report by entering details"
+    },
+    {
+      "id": "SM-06",
+      "feature": "Report generates automatically as per the format needed and send as mail and WhatsApp if integrated"
+    },
+    {
+      "id": "SM-07",
+      "feature": "View requests in new, ongoing, completed"
+    },
+    {
+      "id": "SM-08",
+      "feature": "Create AMC packages and map to customers"
+    },
+    {
+      "id": "SM-09",
+      "feature": "View AMC mapped customers list"
+    },
+    {
+      "id": "SM-10",
+      "feature": "Auto reminder in software and email before specific number of days for the AMC due cases (upcoming)"
+    },
+    {
+      "id": "SM-11",
+      "feature": "QR code to share with customers to raise service request"
+    },
+    {
+      "id": "SM-12",
+      "feature": "Set service incentive for AMC on point basis or as per requirement"
+    },
+    {
+      "id": "SM-13",
+      "feature": "Auto calculate incentive based on AMC sales and report can be seen"
+    },
+    {
+      "id": "SM-14",
+      "feature": "Set upsell-cross-sell incentive system- point based or as per requirement"
+    },
+    {
+      "id": "SM-15",
+      "feature": "View incentive gained for staff in month in their login also"
+    },
+    {
+      "id": "SM-16",
+      "feature": "Automatic customer registration when a new service request raised if not registered already"
+    },
+    {
+      "id": "SM-17",
+      "feature": "Get mail communication when new requests are raised"
+    },
+    {
+      "id": "SM-18",
+      "feature": "Collect feedback from customers for services"
+    },
+    {
+      "id": "SM-19",
+      "feature": "Detailed MIS on service request management like top clients, top request categories, TAT exceeded cases, overall pie chart summary on count of requests, performance bar chart of technicians, ratings etc"
+    },
+    {
+      "id": "SM-20",
+      "feature": "Tracking location of service staffs via Google APIs"
+    },
+    {
+      "id": "SM-21",
+      "feature": "Auto flagging of location tracking when staff is delayed"
+    },
+    {
+      "id": "SM-22",
+      "feature": "View and download staff location activities in Excel format for each month"
+    },
+    {
+      "id": "SM-23",
+      "feature": "Option to staff to mark location data (started, reached, work completed)"
+    },
+    {
+      "id": "SM-24",
+      "feature": "Add expenses by staffs with bill attachments"
+    },
+    {
+      "id": "SM-25",
+      "feature": "Approve expenses by admin"
+    },
+    {
+      "id": "SM-26",
+      "feature": "Download expenses monthly by admin in Excel format"
+    }
+  ]
+}

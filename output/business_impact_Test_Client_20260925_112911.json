@@ -1,0 +1,265 @@
+ {
+  "business_profile": {
+    "industry": "HVAC / AC Servicing",
+    "business_summary": "An AC and related equipment servicing company with 10-12 staff members who manually handle customer service requests, complaints, and technician assignments, leading to time-consuming tracking and administrative overhead."
+  },
+  "current_processes": [
+    {
+      "area": "Service Request Intake and Tracking",
+      "current_state": "Customer requests and complaints are received via phone and manually logged by staff sitting behind a desk. Staff manually track the status of each request (e.g., pending, in progress, closed) and follow up on open cases.",
+      "pain_point": "Requires dedicated staff and consumes a lot of time due to manual tracking and follow-ups.",
+      "evidence": "There are 10 to 12 staff to handle the service... There are difficulties in handling and a lot of time is being spent on it... Once these requests come in, Sitting behind where we were sitting Should handle... Where did it reach? Is it done? Is it finished?"
+    },
+    {
+      "area": "Technician Job Assignment",
+      "current_state": "A manual process where a manager or staff member assigns incoming service requests to technicians based on their current location, existing workload, and customer feedback history.",
+      "pain_point": "Manual assignment is time-consuming and prone to errors, such as assigning requests to technicians with negative feedback or overloading a single technician.",
+      "evidence": "Before we assign it now, You mentioned automatically assigning, right? This automatic assignment should happen. Manual is not needed, automatic assignment should happen... If any technician... says that the customer has any issues or conflicts... Bad reviews... If someone has given a return, then they should not be assigned."
+    },
+    {
+      "area": "Technician Performance Reporting",
+      "current_state": "A daily manual process where technicians report their work activities, and a manager manually compiles metrics on requests attended, closed, service charges collected, and new products sold, which is then sent via email.",
+      "pain_point": "Manual data collection and compilation require significant administrative time.",
+      "evidence": "Daily work activities... In a graphical way, as an MS... There is a particular mail ID in the office. You need to leave that mail ID... What all did you do that day? How many service requests were attended? How many were closed, how many service charges were collected? New product Sold."
+    },
+    {
+      "area": "Customer Communication",
+      "current_state": "Customers contact the company via phone to raise service requests or complaints.",
+      "pain_point": "Lacks automated, self-service channels for request intake.",
+      "evidence": "There is a mobile phone. To that phone Customer with requests as you like."
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "BI-01",
+      "area": "Service Request Intake and Tracking",
+      "current_cost_driver": "Manual administrative labor time spent logging, tracking, and following up on service requests.",
+      "current_state": "Staff manually logs and tracks service requests and complaints raised by phone, spending a significant amount of time on administrative overhead.",
+      "automation_opportunity": "Implement a software application that automatically handles service requests and complaints, allowing customers to submit them via a mobile application.",
+      "impact_type": "admin_time",
+      "metric": "hours of administrative labor per month",
+      "unit": "hours/month",
+      "formula": "Total_Service_Requests_Per_Month * Avg_Admin_Time_Per_Request",
+      "variables": [
+        {
+          "name": "total_service_requests_per_month",
+          "label": "Total service requests per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "requests/month",
+          "source": "MISSING",
+          "evidence": "The client mentions receiving daily requests but does not provide a specific monthly volume."
+        },
+        {
+          "name": "avg_admin_time_per_request",
+          "label": "Average time spent by staff per request",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours/request",
+          "source": "MISSING",
+          "evidence": "The client states that a lot of time is spent but does not quantify the exact time per request."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "None",
+      "assumption_note": "None",
+      "example_calculation": "If the company receives 100 service requests per month and staff spends 0.5 hours per request, the total admin time is 50 hours/month. Automation could reduce this by a percentage, but the exact saving cannot be calculated without knowing the current time spent.",
+      "calculation_note": "Missing inputs: total_service_requests_per_month, avg_admin_time_per_request",
+      "model_calculation_note": "The result cannot be calculated because the total number of service requests per month and the average time spent per request are not provided in the meeting."
+    },
+    {
+      "id": "BI-02",
+      "area": "Technician Job Assignment",
+      "current_cost_driver": "Manual time spent by managers/staff assigning jobs based on location, workload, and feedback history.",
+      "current_state": "A manual process where staff assign service requests to technicians, checking their location, current workload, and negative feedback history.",
+      "automation_opportunity": "Automate the assignment of service requests to technicians based on their location, current workload, and negative feedback status using an intelligent algorithm.",
+      "impact_type": "processing_time",
+      "metric": "time to assign a service request",
+      "unit": "minutes/request",
+      "formula": "Manual_Assignment_Time - Automated_Assignment_Time",
+      "variables": [
+        {
+          "name": "manual_assignment_time",
+          "label": "Current time to manually assign a request",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "minutes/request",
+          "source": "MISSING",
+          "evidence": "The client states that manual assignment is a difficulty but does not provide a time metric."
+        },
+        {
+          "name": "automated_assignment_time",
+          "label": "Time to assign a request via automation",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "minutes/request",
+          "source": "MISSING",
+          "evidence": "No time metric is provided for the automated process."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "None",
+      "assumption_note": "None",
+      "example_calculation": "If manual assignment takes 5 minutes per request and automation takes 0.5 minutes, the time saved is 4.5 minutes per request. This cannot be calculated without the specific time values.",
+      "calculation_note": "Missing inputs: manual_assignment_time, automated_assignment_time",
+      "model_calculation_note": "The result cannot be calculated because the specific time taken for manual and automated assignment are not provided."
+    },
+    {
+      "id": "BI-03",
+      "area": "Technician Performance Reporting",
+      "current_cost_driver": "Manual administrative time spent by technicians and managers compiling daily performance reports.",
+      "current_state": "Technicians manually report their daily work activities, and a manager manually compiles metrics (requests attended, closed, service charges collected, new products sold) into a graphical report.",
+      "automation_opportunity": "Automate the generation of daily graphical work activity reports for technicians, including metrics on requests attended, closed, service charges collected, and new products sold.",
+      "impact_type": "admin_time",
+      "metric": "hours of administrative labor per month",
+      "unit": "hours/month",
+      "formula": "Total_Technicians * (Hours_Spent_Daily_Reporting * Days_Per_Month)",
+      "variables": [
+        {
+          "name": "total_technicians",
+          "label": "Number of technicians",
+          "value": 10,
+          "low_value": 8,
+          "high_value": 12,
+          "unit": "technicians",
+          "source": "MEETING",
+          "evidence": "There are 10 to 12 staff to handle the service."
+        },
+        {
+          "name": "hours_spent_daily_reporting",
+          "label": "Hours spent by technicians on daily reporting",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours/day",
+          "source": "MISSING",
+          "evidence": "The client mentions the need for daily reports but does not quantify the time spent on this."
+        },
+        {
+          "name": "days_per_month",
+          "label": "Number of working days per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "days/month",
+          "source": "MISSING",
+          "evidence": "Not provided in the meeting."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "None",
+      "assumption_note": "None",
+      "example_calculation": "If there are 10 technicians and each spends 0.5 hours daily on reporting over a 22-day month, the total admin time is 110 hours/month.",
+      "calculation_note": "Missing inputs: hours_spent_daily_reporting, days_per_month",
+      "model_calculation_note": "The result cannot be calculated because the hours spent on daily reporting and the number of working days per month are not provided."
+    },
+    {
+      "id": "BI-04",
+      "area": "Customer Communication",
+      "current_cost_driver": "Manual labor time spent by staff answering phone calls to receive service requests and complaints.",
+      "current_state": "Customers call a mobile phone to raise service requests and complaints, which are then manually logged by staff.",
+      "automation_opportunity": "Implement a WhatsApp chatbot for HVAC services to automatically handle customer requests and complaints.",
+      "impact_type": "admin_time",
+      "metric": "hours of administrative labor per month",
+      "unit": "hours/month",
+      "formula": "Total_Service_Requests_Per_Month * Avg_Phone_Call_Time_Per_Request",
+      "variables": [
+        {
+          "name": "total_service_requests_per_month",
+          "label": "Total service requests per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "requests/month",
+          "source": "MISSING",
+          "evidence": "The client mentions daily requests but does not provide a specific monthly volume."
+        },
+        {
+          "name": "avg_phone_call_time_per_request",
+          "label": "Average time spent on a phone call per request",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours/request",
+          "source": "MISSING",
+          "evidence": "The client does not quantify the time spent on phone calls."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "None",
+      "assumption_note": "None",
+      "example_calculation": "If the company receives 100 service requests per month and staff spends 0.5 hours per call, the total phone call time is 50 hours/month.",
+      "calculation_note": "Missing inputs: total_service_requests_per_month, avg_phone_call_time_per_request",
+      "model_calculation_note": "The result cannot be calculated because the total number of service requests per month and the average time spent per phone call are not provided."
+    }
+  ],
+  "explicit_numbers": [
+    {
+      "label": "Number of staff handling service",
+      "value": 10,
+      "unit": "staff",
+      "evidence": "There are 10 to 12 staff to handle the service."
+    },
+    {
+      "label": "Software development cost estimate",
+      "value": 100000,
+      "unit": "currency",
+      "evidence": "Approximately one lakh."
+    }
+  ],
+  "missing_inputs": [
+    {
+      "label": "Total number of service requests per month",
+      "why_needed": "Required to calculate the total administrative time spent on logging, tracking, and handling requests.",
+      "unit": "requests/month"
+    },
+    {
+      "label": "Average time spent by staff per service request",
+      "why_needed": "Required to calculate the total labor cost and time savings from automation.",
+      "unit": "hours/request"
+    },
+    {
+      "label": "Average time spent by staff per phone call",
+      "why_needed": "Required to calculate the total time spent on manual phone-based request intake.",
+      "unit": "hours/call"
+    },
+    {
+      "label": "Number of working days per month",
+      "why_needed": "Required to calculate the total monthly labor hours for daily reporting.",
+      "unit": "days/month"
+    },
+    {
+      "label": "Average time spent by technicians on daily reporting",
+      "why_needed": "Required to calculate the total monthly labor hours for daily reporting.",
+      "unit": "hours/day"
+    },
+    {
+      "label": "Average time spent on manual job assignment",
+      "why_needed": "Required to calculate the time saved from automated job assignment.",
+      "unit": "minutes/request"
+    }
+  ],
+  "analysis_notes": [
+    "The meeting transcript is highly conversational and contains several transcription errors, but the core business requirements for an HVAC service management software are clear.",
+    "The client explicitly states that manual handling of service requests is a major headache and consumes a lot of time.",
+    "The client mentions a software development cost estimate of approximately one lakh, but this is a project cost, not an operational saving, and should not be used to calculate ROI.",
+    "The client mentions the need for an intelligent algorithm for assignment, but does not provide any data on technician locations, workloads, or feedback scores, making a detailed calculation impossible.",
+    "The client requests a WhatsApp chatbot for HVAC services, but does not provide any data on current call volumes or times, making a calculation of potential savings impossible."
+  ]
+}

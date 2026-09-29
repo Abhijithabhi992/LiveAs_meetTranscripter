@@ -1,0 +1,239 @@
+{
+  "business_profile": {
+    "industry": "Home Appliances (Refrigerators, ACs) maintenance and AMC (Annual Maintenance Contract) management",
+    "business_summary": "The client is a home appliance company that manages service requests for appliances like ACs and refrigerators. They are looking to automate their AMC management system, specifically focusing on automatic staff assignment to service requests based on proximity and automated mail routing to service reports."
+  },
+  "current_processes": [
+    {
+      "area": "Service Request Assignment",
+      "current_state": "Service requests for home appliances (ACs, refrigerators) are currently managed manually, requiring a person to assign staff to the admin.",
+      "pain_point": "Manual assignment of staff to service requests creates administrative overhead and delays.",
+      "evidence": "Client stated: 'A drawer frame was needed to assign the staff to the admin.' and 'If you are raising a service request, it should be assigned to a nearby service staff automatically.'"
+    },
+    {
+      "area": "Communication and Reporting",
+      "current_state": "After manual assignment, the mail is sent to the service report.",
+      "pain_point": "Manual mail dispatch to service reports is time-consuming and prone to errors.",
+      "evidence": "Client stated: 'After automatic assignment, the mail should go to the service report.'"
+    },
+    {
+      "area": "Customer Interaction",
+      "current_state": "Messages and requests are accepted manually without an automated chatbot.",
+      "pain_point": "Manual handling of customer messages and requests increases response time and operational cost.",
+      "evidence": "Client requested: 'The system needs an option to accept messages and requests using a chatbot.'"
+    },
+    {
+      "area": "System Capacity",
+      "current_state": "The system must support maximum MC lines, but the current system's capacity is unclear.",
+      "pain_point": "Inability to scale with maximum MC lines due to lack of automation.",
+      "evidence": "Client stated: 'We need maximum MC lines. That needs to be automated.'"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "BI-01",
+      "area": "Service Request Assignment",
+      "current_cost_driver": "Manual assignment of staff to service requests",
+      "current_state": "Service requests for home appliances (ACs, refrigerators) are assigned manually to staff via admin.",
+      "automation_opportunity": "Automated assignment of service requests to nearby service staff based on location.",
+      "impact_type": "processing_time",
+      "metric": "Time saved per service request in assignment",
+      "unit": "minutes/request",
+      "formula": "Time_Saved = (Current_Manual_Assignment_Time - Automated_Assignment_Time) * Number_of_Requests",
+      "variables": [
+        {
+          "name": "current_manual_assignment_time",
+          "label": "Current time to manually assign a service request",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "minutes",
+          "source": "MISSING",
+          "evidence": "No time value provided in meeting for manual assignment process."
+        },
+        {
+          "name": "automated_assignment_time",
+          "label": "Time to automatically assign a service request using system",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "minutes",
+          "source": "MISSING",
+          "evidence": "No time value provided in meeting for automated assignment process."
+        },
+        {
+          "name": "number_of_requests",
+          "label": "Number of service requests per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "requests/month",
+          "source": "MISSING",
+          "evidence": "No volume data provided in meeting."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A",
+      "assumption_note": "N/A",
+      "example_calculation": "N/A",
+      "calculation_note": "Missing inputs: current_manual_assignment_time, automated_assignment_time, number_of_requests",
+      "model_calculation_note": "Cannot calculate time savings without knowing current manual assignment time, automated assignment time, and number of requests per month."
+    },
+    {
+      "id": "BI-02",
+      "area": "Communication and Reporting",
+      "current_cost_driver": "Manual mail dispatch to service reports after assignment",
+      "current_state": "After manual staff assignment, mail is sent to the service report.",
+      "automation_opportunity": "Automated mail dispatch to service reports immediately after automatic assignment.",
+      "impact_type": "admin_time",
+      "metric": "Time saved per service request in mail dispatch",
+      "unit": "minutes/request",
+      "formula": "Time_Saved = (Current_Manual_Mail_Dispatch_Time - Automated_Mail_Dispatch_Time) * Number_of_Requests",
+      "variables": [
+        {
+          "name": "current_manual_mail_dispatch_time",
+          "label": "Current time to manually dispatch mail to service report",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "minutes",
+          "source": "MISSING",
+          "evidence": "No time value provided in meeting for manual mail dispatch process."
+        },
+        {
+          "name": "automated_mail_dispatch_time",
+          "label": "Time to automatically dispatch mail to service report",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "minutes",
+          "source": "MISSING",
+          "evidence": "No time value provided in meeting for automated mail dispatch process."
+        },
+        {
+          "name": "number_of_requests",
+          "label": "Number of service requests per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "requests/month",
+          "source": "MISSING",
+          "evidence": "No volume data provided in meeting."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A",
+      "assumption_note": "N/A",
+      "example_calculation": "N/A",
+      "calculation_note": "Missing inputs: current_manual_mail_dispatch_time, automated_mail_dispatch_time, number_of_requests",
+      "model_calculation_note": "Cannot calculate time savings without knowing current manual mail dispatch time, automated mail dispatch time, and number of requests per month."
+    },
+    {
+      "id": "BI-03",
+      "area": "Customer Interaction",
+      "current_cost_driver": "Manual handling of messages and requests from customers",
+      "current_state": "Messages and requests are accepted manually without a chatbot.",
+      "automation_opportunity": "Implement a chatbot to accept messages and requests automatically.",
+      "impact_type": "customer_handling",
+      "metric": "Reduction in manual customer interaction time",
+      "unit": "minutes/interaction",
+      "formula": "Time_Saved = (Current_Manual_Interaction_Time - Automated_Interaction_Time) * Number_of_Interactions",
+      "variables": [
+        {
+          "name": "current_manual_interaction_time",
+          "label": "Current time to handle a customer message/request manually",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "minutes",
+          "source": "MISSING",
+          "evidence": "No time value provided in meeting for manual customer interaction."
+        },
+        {
+          "name": "automated_interaction_time",
+          "label": "Time to handle a customer message/request using chatbot",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "minutes",
+          "source": "MISSING",
+          "evidence": "No time value provided in meeting for automated customer interaction."
+        },
+        {
+          "name": "number_of_interactions",
+          "label": "Number of customer messages/requests per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "interactions/month",
+          "source": "MISSING",
+          "evidence": "No volume data provided in meeting."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A",
+      "assumption_note": "N/A",
+      "example_calculation": "N/A",
+      "calculation_note": "Missing inputs: current_manual_interaction_time, automated_interaction_time, number_of_interactions",
+      "model_calculation_note": "Cannot calculate time savings without knowing current manual interaction time, automated interaction time, and number of interactions per month."
+    }
+  ],
+  "explicit_numbers": [
+    {
+      "label": "Approximate run back amount mentioned by vendor",
+      "value": null,
+      "unit": "currency",
+      "evidence": "Vendor stated: 'Okay, we have approximately a run back amount.'"
+    }
+  ],
+  "missing_inputs": [
+    {
+      "label": "Number of service requests per month",
+      "why_needed": "Required to calculate total time savings from automation of assignment and mail dispatch.",
+      "unit": "requests/month"
+    },
+    {
+      "label": "Time taken for manual staff assignment",
+      "why_needed": "Required to calculate time savings from automated assignment.",
+      "unit": "minutes"
+    },
+    {
+      "label": "Time taken for manual mail dispatch to service report",
+      "why_needed": "Required to calculate time savings from automated mail dispatch.",
+      "unit": "minutes"
+    },
+    {
+      "label": "Time taken for manual customer interaction",
+      "why_needed": "Required to calculate time savings from chatbot implementation.",
+      "unit": "minutes"
+    },
+    {
+      "label": "Hourly rate of admin staff",
+      "why_needed": "Required to convert time savings into monetary savings.",
+      "unit": "currency/hour"
+    },
+    {
+      "label": "Number of customer messages/requests per month",
+      "why_needed": "Required to calculate total time savings from chatbot implementation.",
+      "unit": "interactions/month"
+    }
+  ],
+  "analysis_notes": [
+    "The client expressed a need for automation in AMC management for home appliances (ACs, refrigerators).",
+    "Specific automation requests include: automatic staff assignment to nearby service staff, automated mail dispatch to service reports, and a chatbot for accepting messages/requests.",
+    "The client also mentioned the need for maximum MC lines, indicating scalability concerns.",
+    "No specific time, cost, or volume data was provided in the meeting to quantify the impact of these automations.",
+    "The vendor mentioned an 'approximate run back amount' but no specific value was given, and it is not clear if this relates to implementation cost or operational savings.",
+    "No ROI or payback period can be calculated due to missing financial and volume data.",
+    "All opportunities are based on the client's stated requirements, but calculations are not possible without additional data."
+  ]
+}

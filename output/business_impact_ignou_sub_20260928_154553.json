@@ -1,0 +1,160 @@
+{
+  "business_profile": {
+    "industry": "Education / Distance Learning Administration",
+    "business_summary": "The client is an administrator for an MBA counseling program, likely at IGNOU or a similar open university, responsible for communicating schedules, assignments, and updates to first-year students via email, WhatsApp groups, and study centers."
+  },
+  "current_processes": [
+    {
+      "area": "Student Communication",
+      "current_state": "Counseling schedules and assignment updates are sent to first-year students via email, and students are directed to a WhatsApp group for further updates. Official updates are restricted to IGNOU's official websites.",
+      "pain_point": "Manual distribution of emails and management of WhatsApp groups for schedule updates.",
+      "evidence": "Client states: 'We have already started the MBA counseling schedule. We have sent emails to all the first-year students... There is a WhatsApp group, join that group. The counseling schedule will come in the group itself.'"
+    },
+    {
+      "area": "Information Verification",
+      "current_state": "The client manually checks and relies on official IGNOU websites and social media platforms to verify information.",
+      "pain_point": "Risk of misinformation from paid or fake third-party websites and channels.",
+      "evidence": "Client states: 'You can follow only our official sites... a lot of paid ones... Fake and existing... WhatsApp groups and channels. All Facebook accounts will be sent to you by mail... Follow only the websites.'"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "BI-01",
+      "area": "Student Communication",
+      "current_cost_driver": "Manual email distribution and WhatsApp group management.",
+      "current_state": "The administrator manually sends emails to first-year students and posts schedule/assignment updates in a WhatsApp group.",
+      "automation_opportunity": "Automated email and SMS/WhatsApp broadcast system for sending counseling schedules and assignment submission dates/updates.",
+      "impact_type": "labour_time",
+      "metric": "Time spent per communication cycle",
+      "unit": "hours/month",
+      "formula": "Total_Time_Hours = (Manual_Email_Time * Email_Cycles) + (Manual_WhatsApp_Time * WhatsApp_Cycles)",
+      "variables": [
+        {
+          "name": "manual_email_time",
+          "label": "Time to manually send emails to first-year students",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours",
+          "source": "MISSING",
+          "evidence": "Meeting does not specify the time required to send emails."
+        },
+        {
+          "name": "manual_whatsapp_time",
+          "label": "Time to manually post updates in the WhatsApp group",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours",
+          "source": "MISSING",
+          "evidence": "Meeting does not specify the time required to manage the WhatsApp group."
+        },
+        {
+          "name": "email_cycles",
+          "label": "Number of times emails are sent per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "cycles/month",
+          "source": "MISSING",
+          "evidence": "Meeting does not specify the frequency of email communication."
+        },
+        {
+          "name": "whatsapp_cycles",
+          "label": "Number of times updates are posted in the WhatsApp group per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "cycles/month",
+          "source": "MISSING",
+          "evidence": "Meeting does not specify the frequency of WhatsApp updates."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A",
+      "assumption_note": "N/A",
+      "example_calculation": "N/A - Cannot be calculated due to missing inputs.",
+      "calculation_note": "Missing inputs: manual_email_time, manual_whatsapp_time, email_cycles, whatsapp_cycles",
+      "model_calculation_note": "The meeting establishes the need for automation but does not provide the necessary inputs (time per task, frequency of tasks) to calculate a potential time saving."
+    },
+    {
+      "id": "BI-02",
+      "area": "Information Verification",
+      "current_cost_driver": "Manual verification and risk of misinformation.",
+      "current_state": "The client manually checks official IGNOU websites and social media to verify information and warns students against fake/paid channels.",
+      "automation_opportunity": "Automated web scraping or API integration to pull official updates from IGNOU's official websites and social media platforms.",
+      "impact_type": "error_rework",
+      "metric": "Incidents of misinformation or student confusion",
+      "unit": "count/month",
+      "formula": "Misinformation_Incidents = Total_Students - (Students_Receiving_Official_Updates)",
+      "variables": [
+        {
+          "name": "total_students",
+          "label": "Total number of first-year students",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "count",
+          "source": "MISSING",
+          "evidence": "Meeting does not state the number of first-year students."
+        },
+        {
+          "name": "students_receiving_official_updates",
+          "label": "Number of students receiving verified official updates",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "count",
+          "source": "MISSING",
+          "evidence": "Meeting does not state the reach of official updates."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A",
+      "assumption_note": "N/A",
+      "example_calculation": "N/A - Cannot be calculated due to missing inputs.",
+      "calculation_note": "Missing inputs: total_students, students_receiving_official_updates",
+      "model_calculation_note": "The meeting highlights the risk of fake/paid channels but does not provide student volume or current error rates to quantify the impact of automation."
+    }
+  ],
+  "explicit_numbers": [],
+  "missing_inputs": [
+    {
+      "label": "Time spent manually sending emails",
+      "why_needed": "Required to calculate the labour_time saving from email automation.",
+      "unit": "hours"
+    },
+    {
+      "label": "Time spent manually managing the WhatsApp group",
+      "why_needed": "Required to calculate the labour_time saving from WhatsApp automation.",
+      "unit": "hours"
+    },
+    {
+      "label": "Frequency of email communication",
+      "why_needed": "Required to calculate the total time spent on manual emails per month.",
+      "unit": "cycles/month"
+    },
+    {
+      "label": "Frequency of WhatsApp updates",
+      "why_needed": "Required to calculate the total time spent on manual WhatsApp management per month.",
+      "unit": "cycles/month"
+    },
+    {
+      "label": "Total number of first-year students",
+      "why_needed": "Required to estimate the scale of communication and potential misinformation impact.",
+      "unit": "count"
+    }
+  ],
+  "analysis_notes": [
+    "The meeting transcript is highly fragmented and contains many incomplete sentences, making it challenging to extract concrete operational metrics.",
+    "The client explicitly requests the provision of all Facebook accounts via email, which could indicate a need for a centralized content management system, but the transcript does not provide enough detail to quantify the impact of this specific request.",
+    "No specific monetary values, employee counts, or transaction volumes were mentioned in the meeting.",
+    "The requested automation (email/WhatsApp updates, official site tracking) is identified, but the meeting does not provide sufficient data to calculate a guaranteed saving."
+  ]
+}

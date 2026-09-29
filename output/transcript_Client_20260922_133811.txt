@@ -1,0 +1,62 @@
+[00:11] Client: Hello.
+[00:28] Client: Hello?
+[00:28] You: Hello
+[00:28] You: Of course
+[00:32] You: Good afternoon, sir.
+[00:32] Client: A little bit.
+[00:38] You: Good afternoon sir
+[00:50] Client: Okay, good afternoon.
+[01:03] You: Sir, could you please tell us what your requirements are now? We can create a proposal accordingly and discuss everything.
+[01:14] Client: Okay.
+[01:14] Client: Okay, my problem.
+[01:20] Client: When I say personal, for me, mainly when I say my requirements, what I need is an AI chatbot.
+[01:29] Client: What we are saying now is that we are a tech development company. We need an AI chatbot. But it only has one option to access. That is, by logging into our web application.
+[01:31] Client: We can give an option to access through that. That is, we can
+[01:32] Client: To our clients.
+[01:35] Client: a
+[01:37] Client: Implement it and get good means.
+[01:40] Client: An AI chatbot that can do heavy duty.
+[01:43] Client: I reply whenever I am asked. Such a chatbot about our company.
+[01:44] Client: Similarly
+[01:47] Client: When we say inside that, don't we have our clients, clients?
+[01:49] Client: It should be accessible. That is now
+[01:54] Client: If they are a client, they are not our client, sorry, customer.
+[01:57] Client: If it's a customer, they bought the item from us. After buying the item,
+[02:02] Client: Won't we give them a bill? We can log in using that bill number and their mobile number.
+[02:06] Client: If we have that token number, then this WhatsApp chat
+[02:09] Client: Is there an option to give it in a way that the bot can be accessed?
+[02:13] Client: Then, the payment option is needed, and the security should be very strong.
+[02:14] Client: Similarly.
+[02:16] Client: Inside that now
+[02:20] Client: What to say?
+[02:25] Client: Yes, similarly we need the service report. Service report.
+[02:27] Client: When requesting, it should come as a PDF in the mail.
+[02:29] Client: Because of the service report, a
+[02:32] Client: There should be a unique token, the build number should be unique.
+[02:35] Client: Similarly, email ID, address, everything is required.
+[02:40] Client: These are our main requirements. Can you tell me the exact amount for this?
+[02:41] Client: Similarly.
+[02:45] Client: We have two users now, that is, admin and staff.
+[02:49] Client: When it comes to staff, we have 5 staff members coming. There is only one admin, and that is me.
+[02:52] Client: Basically, our company's name was Livest.
+[02:57] Client: Can you create a proposal and tell me exactly what the amount will be? Can you tell me the main amount right now?
+[03:09] You: If we have
+[03:11] You: Like that
+[03:12] You: But I've
+[03:15] You: I can't say the exact amount right now, but we can know when it is.
+[03:18] You: We can only tell you the amount based on what your full requirements are.
+[03:31] You: Basically, if we were to say, we can get this within 60k to 1.5k.
+[03:32] You: Amount.
+[03:39] You: That depends on our requirements. And since things like AI chatbot are coming, it will come close to 1.5, in that range itself.
+[03:45] You: This is a project with good implementation. And it will take us 1 month to complete the project.
+[03:49] You: It is a fully customized project. You can access it whenever you want. Similarly,
+[03:54] You: We have service packages as yearly packages. It comes in amounts like ₹5000, ₹15000, and so on.
+[03:56] You: Okay, if it is, just tell me.
+[04:05] Client: No sir, okay okay.
+[04:09] Client: Okay, we can connect later. After connecting, just tell me exactly about it.
+[04:15] You: Sir, thank you, thank you.
+[04:17] You: If there is anything, just connect it.
+[04:22] You: Either email or visit our group's site.
+[04:23] You: I am not raising a request.
+[04:28] Client: Okay, okay, please submit your proposal to me.
+[04:31] You: Okay, I will send the proposal today itself.

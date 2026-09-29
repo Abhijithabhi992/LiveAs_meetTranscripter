@@ -1,0 +1,175 @@
+{
+  "business_profile": {
+    "industry": "HVAC service and maintenance",
+    "business_summary": "An air-conditioning service company with 10 to 12 staff handling service requests and complaints. They seek to automate the end-to-end tracking, assignment, and reporting of service requests to reduce manual administrative time."
+  },
+  "current_processes": [
+    {
+      "area": "Service Request Handling",
+      "current_state": "Staff manually sit behind desks to handle incoming service requests and complaints, track their status, and follow up.",
+      "pain_point": "Manual handling takes a lot of time and is the main headache.",
+      "evidence": "There are difficulties in handling and a lot of time is being spent on it... This is the main headache, currently the main headache is this."
+    },
+    {
+      "area": "Technician Assignment",
+      "current_state": "Manual assignment of service requests to technicians based on location and workload, without considering negative reviews.",
+      "pain_point": "Manual assignment is inefficient and does not dynamically balance workload or filter out technicians with bad reviews.",
+      "evidence": "Before we assign it now... This automatic assignment should happen. Manual is not needed, automatic assignment should happen."
+    },
+    {
+      "area": "Technician Reporting",
+      "current_state": "Technicians do not receive daily automated reports of their work activities.",
+      "pain_point": "Lack of automated daily reporting on service requests attended, closed, service charges collected, and new products sold.",
+      "evidence": "Technicians must receive a daily email report detailing their work activities, including how many service requests were attended, closed, service charges collected, and new products sold."
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "BI-01",
+      "area": "Service Request Handling",
+      "current_cost_driver": "Manual administrative time spent tracking and updating service requests.",
+      "current_state": "Staff manually handle incoming service requests, track status, and follow up via manual methods.",
+      "automation_opportunity": "Implement a fully automated web application to handle service requests from start to finish, including status tracking and automatic assignment.",
+      "impact_type": "admin_time",
+      "metric": "hours/month of manual administrative time",
+      "unit": "hours/month",
+      "formula": "total_service_requests_per_month * avg_time_per_manual_update",
+      "variables": [
+        {
+          "name": "total_service_requests_per_month",
+          "label": "Total service requests per month",
+          "value": null,
+          "unit": "requests/month",
+          "source": "MISSING",
+          "evidence": ""
+        },
+        {
+          "name": "avg_time_per_manual_update",
+          "label": "Average time per manual status update",
+          "value": null,
+          "unit": "minutes/update",
+          "source": "MISSING",
+          "evidence": ""
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculation_note": "Missing inputs: total_service_requests_per_month, avg_time_per_manual_update",
+      "model_calculation_note": "Cannot calculate without knowing monthly service request volume and the average time staff spend per request update."
+    },
+    {
+      "id": "BI-02",
+      "area": "Technician Assignment",
+      "current_cost_driver": "Inefficient manual assignment of service requests to technicians.",
+      "current_state": "Staff manually assign requests to technicians based on location and current workload, but do not filter out technicians with negative reviews.",
+      "automation_opportunity": "Implement an intelligent algorithm that automatically assigns requests based on technician location, current workload, and negative review status.",
+      "impact_type": "capacity_recovery",
+      "metric": "percentage of requests optimally assigned",
+      "unit": "percentage",
+      "formula": "(requests_assigned_optimally / total_requests) * 100",
+      "variables": [
+        {
+          "name": "requests_assigned_optimally",
+          "label": "Requests assigned to the best-fit technician",
+          "value": null,
+          "unit": "count",
+          "source": "MISSING",
+          "evidence": ""
+        },
+        {
+          "name": "total_requests",
+          "label": "Total number of service requests",
+          "value": null,
+          "unit": "count",
+          "source": "MISSING",
+          "evidence": ""
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculation_note": "Missing inputs: requests_assigned_optimally, total_requests",
+      "model_calculation_note": "Cannot calculate without knowing the total number of requests and how many are currently assigned optimally."
+    },
+    {
+      "id": "BI-03",
+      "area": "Technician Reporting",
+      "current_cost_driver": "Manual compilation of daily work activities for technicians.",
+      "current_state": "No daily email report is sent to technicians detailing their attended, closed, and sold items.",
+      "automation_opportunity": "Automate daily email reports to technicians detailing service requests attended, closed, service charges collected, and new products sold.",
+      "impact_type": "admin_time",
+      "metric": "hours/month of manual report compilation",
+      "unit": "hours/month",
+      "formula": "number_of_technicians * avg_time_per_report",
+      "variables": [
+        {
+          "name": "number_of_technicians",
+          "label": "Number of technicians",
+          "value": null,
+          "unit": "count",
+          "source": "MISSING",
+          "evidence": "Client mentions '10 to 12 staff' but does not specify how many are technicians."
+        },
+        {
+          "name": "avg_time_per_report",
+          "label": "Average time to manually compile a daily report",
+          "value": null,
+          "unit": "minutes/report",
+          "source": "MISSING",
+          "evidence": ""
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculation_note": "Missing inputs: number_of_technicians, avg_time_per_report",
+      "model_calculation_note": "Cannot calculate without knowing the number of technicians and the time spent manually compiling their daily reports."
+    }
+  ],
+  "explicit_numbers": [
+    {
+      "label": "Number of staff handling service",
+      "value": 12,
+      "unit": "staff",
+      "evidence": "There are 10 to 12 staff to handle the service."
+    },
+    {
+      "label": "Proposed software budget",
+      "value": 100000,
+      "unit": "currency (INR)",
+      "evidence": "Approximately one lakh."
+    }
+  ],
+  "missing_inputs": [
+    {
+      "label": "Monthly volume of service requests",
+      "why_needed": "Required to calculate the total manual admin time saved by automation.",
+      "unit": "requests/month"
+    },
+    {
+      "label": "Average time staff spends per manual service request update",
+      "why_needed": "Required to calculate the total manual admin time saved by automation.",
+      "unit": "minutes/update"
+    },
+    {
+      "label": "Number of technicians",
+      "why_needed": "Required to calculate the total time spent on manual daily reporting.",
+      "unit": "count"
+    },
+    {
+      "label": "Average time spent manually compiling a daily report per technician",
+      "why_needed": "Required to calculate the total time saved on daily reporting.",
+      "unit": "minutes/report"
+    },
+    {
+      "label": "Current manual assignment efficiency rate",
+      "why_needed": "Required to calculate the improvement in assignment optimization.",
+      "unit": "percentage"
+    }
+  ],
+  "analysis_notes": [
+    "The transcript is highly fragmented and contains significant transcription errors, making it difficult to extract precise business metrics.",
+    "The client explicitly states that manual handling of service requests is the main headache and takes a lot of time, which is a strong indicator of a labor_time and admin_time opportunity.",
+    "The client mentions wanting to 'utilize that particular staff for other good jobs', indicating a capacity_recovery opportunity once automation is implemented.",
+    "The proposed budget of 'one lakh' (100,000 INR) is a project cost, not a business saving, and should not be treated as an operational benefit.",
+    "The requirement for a WhatsApp chatbot is mentioned at the end but lacks context on what it would automate, so no specific opportunity can be derived from it yet."
+  ]
+}

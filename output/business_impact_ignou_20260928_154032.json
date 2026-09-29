@@ -1,0 +1,327 @@
+{
+  "business_profile": {
+    "industry": "Higher education / Distance learning (IGNOU)",
+    "business_summary": "A regional center of IGNOU (Indira Gandhi National Open University) conducting induction meetings to inform students about admission, assignment submission, terminal examinations, re-registration, and study center policies for semester-based and yearly-based programs."
+  },
+  "current_processes": [
+    {
+      "area": "Examination Registration",
+      "current_state": "Students must manually register for terminal examinations via the Samarth portal and pay examination fees before 30 September (or 31 March for yearly programs).",
+      "pain_point": "Students frequently select examination centers without foresight, leading to requests for changes that are not permitted, causing administrative overhead and student dissatisfaction.",
+      "evidence": "Some students selecting and after second day They are sending email. Please change my Exam Center Exam center change not permissible."
+    },
+    {
+      "area": "Assignment Submission (ODL)",
+      "current_state": "Students download assignment question papers from the IGNOU website or Samarth portal, write them, and physically submit them to their assigned study center.",
+      "pain_point": "Students often submit incomplete assignments (e.g., only the front page, blank pages, or wrong files), requiring manual correction and follow-up by study center coordinators.",
+      "evidence": "Some students by mistake uploading a wrong file. Some students are submitting only one page. That is also blank. Sometimes some students are submitting only the front page."
+    },
+    {
+      "area": "Assignment Submission (Online)",
+      "current_state": "Online students must log in to the LMS portal and upload assignments through a unique, one-time link available for each course and session.",
+      "pain_point": "The one-time link constraint and the complexity of the LMS portal lead to upload errors, which delay evaluation.",
+      "evidence": "But that link is available only for one time. You can submit. One course assignment. For one session, only one time. ... some students by mistake uploading a wrong file."
+    },
+    {
+      "area": "Re-registration",
+      "current_state": "Students must manually re-register for the next semester or year by paying fees via the website, regardless of whether they have completed the previous one or written the examinations.",
+      "pain_point": "Missing the re-registration deadline results in students losing their admission for 6 months to 1 year based on the delay, causing significant revenue leakage and administrative tracking.",
+      "evidence": "If you miss on that, you will be losing. Singh. Maybe six months or one year. According to the delay that you make."
+    },
+    {
+      "area": "Study Center Change",
+      "current_state": "Students seeking to change their study center must submit a No Objection Certificate (NOC) from the new Regional Center and ensure the program is activated there.",
+      "pain_point": "The process is manual and requires physical submission of an NOC, creating administrative overhead and potential delays in processing center changes.",
+      "evidence": "You should submit one NOC from the New RC ... For any re-enhancement of the draft."
+    },
+    {
+      "area": "Fee Payment (Practical)",
+      "current_state": "Students must manually pay practical examination fees through a separate link on the Samarth portal before 30 November.",
+      "pain_point": "The manual payment process for practical fees can lead to missed deadlines, delaying the scheduling of practical classes and examinations.",
+      "evidence": "The practical examination fee till 30 November. After November 30, there are no Date exchange."
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "BI-01",
+      "area": "Examination Registration",
+      "current_cost_driver": "Manual selection of examination centers without foresight leading to invalid change requests.",
+      "current_state": "Students select examination centers on the Samarth portal, but changes are not permitted after selection.",
+      "automation_opportunity": "Implement an automated system that uses student location data (e.g., registered address, IP geolocation) to suggest optimal examination centers and display a warning if the student's future travel plans indicate a high risk of needing a change.",
+      "impact_type": "error_rework",
+      "metric": "Number of invalid examination center change requests per session",
+      "unit": "requests/session",
+      "formula": "Invalid_Change_Requests = Total_Change_Requests - Valid_Change_Requests",
+      "variables": [
+        {
+          "name": "total_change_requests",
+          "label": "Total examination center change requests",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "requests",
+          "source": "MISSING",
+          "evidence": "Not quantified in the meeting transcript."
+        },
+        {
+          "name": "valid_change_requests",
+          "label": "Valid examination center change requests",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "requests",
+          "source": "MISSING",
+          "evidence": "Not quantified in the meeting transcript."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A",
+      "assumption_note": "The number of invalid change requests is not provided in the meeting. A calculation cannot be performed without this data.",
+      "example_calculation": "If 100 change requests were received and 20 were valid, the invalid requests would be 80. (100 - 20 = 80).",
+      "calculation_note": "Missing inputs: total_change_requests, valid_change_requests",
+      "model_calculation_note": "This result is illustrative only. The actual number of invalid change requests must be extracted from study center administrative logs."
+    },
+    {
+      "id": "BI-02",
+      "area": "Assignment Submission (ODL)",
+      "current_cost_driver": "Manual physical submission of assignments leading to incomplete or incorrect submissions.",
+      "current_state": "Students submit handwritten assignments to study centers, often with only the front page or blank pages, requiring manual intervention.",
+      "automation_opportunity": "Deploy an automated assignment submission portal with mandatory file-size checks, PDF validation, and a pre-submission checklist to ensure all required pages and documents are attached.",
+      "impact_type": "error_rework",
+      "metric": "Percentage of incomplete assignments requiring manual correction",
+      "unit": "%",
+      "formula": "Incomplete_Assignment_Rate = (Incomplete_Assignments / Total_Assignments) * 100",
+      "variables": [
+        {
+          "name": "incomplete_assignments",
+          "label": "Assignments submitted with missing pages or incorrect files",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "count",
+          "source": "MISSING",
+          "evidence": "Not quantified in the meeting transcript."
+        },
+        {
+          "name": "total_assignments",
+          "label": "Total assignments submitted",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "count",
+          "source": "MISSING",
+          "evidence": "Not quantified in the meeting transcript."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A",
+      "assumption_note": "The meeting notes the occurrence of incomplete assignments but does not provide a volume or percentage.",
+      "example_calculation": "If 500 assignments were submitted and 50 were incomplete, the rate would be 10%. (50 / 500 * 100 = 10).",
+      "calculation_note": "Missing inputs: incomplete_assignments, total_assignments",
+      "model_calculation_note": "This result is illustrative only. The actual rate must be calculated from study center feedback data."
+    },
+    {
+      "id": "BI-03",
+      "area": "Re-registration",
+      "current_cost_driver": "Manual tracking of re-registration deadlines leading to students losing admission and revenue leakage.",
+      "current_state": "Students must manually pay re-registration fees to avoid losing admission for 6 months to 1 year based on delay.",
+      "automation_opportunity": "Implement an automated re-registration reminder system (SMS/Email) that triggers 30, 15, and 7 days before the deadline and locks out late registrations.",
+      "impact_type": "revenue_leakage",
+      "metric": "Number of students losing admission due to missed re-registration deadlines",
+      "unit": "students/session",
+      "formula": "Lost_Admissions = Students_Not_Re_registered_By_Deadline",
+      "variables": [
+        {
+          "name": "students_not_re_registered",
+          "label": "Students who did not complete re-registration by the deadline",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "students",
+          "source": "MISSING",
+          "evidence": "Not quantified in the meeting transcript."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A",
+      "assumption_note": "The meeting states that missing the deadline results in losing admission for 6 months to 1 year, but does not provide a count of affected students.",
+      "example_calculation": "If 1,000 students missed the deadline, the lost admissions would be 1,000. (1,000 = 1,000).",
+      "calculation_note": "Missing inputs: students_not_re_registered",
+      "model_calculation_note": "This result is illustrative only. The actual number of lost admissions must be extracted from regional center records."
+    },
+    {
+      "id": "BI-04",
+      "area": "Study Center Change",
+      "current_cost_driver": "Manual processing of study center change requests requiring physical NOC submission.",
+      "current_state": "Students must submit a physical NOC from the new Regional Center to change their study center.",
+      "automation_opportunity": "Create an online portal for study center changes where students upload the NOC and the system automatically validates the new center's program availability, reducing manual processing time.",
+      "impact_type": "processing_time",
+      "metric": "Average time to process a study center change request",
+      "unit": "days",
+      "formula": "Average_Processing_Time = Total_Processing_Time / Total_Change_Requests",
+      "variables": [
+        {
+          "name": "total_processing_time",
+          "label": "Total time taken to process all study center change requests",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "days",
+          "source": "MISSING",
+          "evidence": "Not quantified in the meeting transcript."
+        },
+        {
+          "name": "total_change_requests",
+          "label": "Total number of study center change requests",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "requests",
+          "source": "MISSING",
+          "evidence": "Not quantified in the meeting transcript."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A",
+      "assumption_note": "The meeting mentions the manual process but does not provide data on processing times or request volumes.",
+      "example_calculation": "If 100 requests were processed in 500 days, the average time would be 5 days. (500 / 100 = 5).",
+      "calculation_note": "Missing inputs: total_processing_time, total_change_requests",
+      "model_calculation_note": "This result is illustrative only. The actual average processing time must be extracted from administrative logs."
+    },
+    {
+      "id": "BI-05",
+      "area": "Fee Payment (Practical)",
+      "current_cost_driver": "Manual payment of practical fees leading to missed deadlines and delayed practical examinations.",
+      "current_state": "Students must manually pay practical examination fees through a separate link before 30 November.",
+      "automation_opportunity": "Automate the practical fee payment process by integrating it with the assignment submission portal, sending automated reminders, and allowing online payment of both theory and practical fees in a single session.",
+      "impact_type": "processing_time",
+      "metric": "Average time taken to pay practical fees after assignment submission",
+      "unit": "days",
+      "formula": "Avg_Payment_Time = Sum_of_Payment_Days / Number_of_Payments",
+      "variables": [
+        {
+          "name": "sum_of_payment_days",
+          "label": "Sum of days taken by all students to pay practical fees",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "days",
+          "source": "MISSING",
+          "evidence": "Not quantified in the meeting transcript."
+        },
+        {
+          "name": "number_of_payments",
+          "label": "Number of practical fee payments made",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "count",
+          "source": "MISSING",
+          "evidence": "Not quantified in the meeting transcript."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A",
+      "assumption_note": "The meeting mentions the deadline but does not provide data on payment times or volumes.",
+      "example_calculation": "If 100 students paid on average 20 days after the link opened, the sum would be 2000. (100 * 20 = 2000).",
+      "calculation_note": "Missing inputs: sum_of_payment_days, number_of_payments",
+      "model_calculation_note": "This result is illustrative only. The actual average payment time must be extracted from transaction logs."
+    }
+  ],
+  "explicit_numbers": [
+    {
+      "label": "Assignment submission deadline for semester-based programs",
+      "value": 30,
+      "unit": "September",
+      "evidence": "Assignment submission date. Maybe extend till 30 October."
+    },
+    {
+      "label": "Examination fee payment deadline for semester-based programs",
+      "value": 30,
+      "unit": "September",
+      "evidence": "Examination fee you have to pay before 30th September."
+    },
+    {
+      "label": "Practical examination fee payment deadline",
+      "value": 30,
+      "unit": "November",
+      "evidence": "The practical examination fee till 30 November."
+    },
+    {
+      "label": "Admission loss delay range for missed re-registration",
+      "value": 6,
+      "unit": "months",
+      "evidence": "Maybe six months or one year. According to the delay that you make."
+    },
+    {
+      "label": "MBA assignment submission deadline",
+      "value": 30,
+      "unit": "October",
+      "evidence": "MBA and MCA 30 October. Assignment submission."
+    },
+    {
+      "label": "MBA examination fee payment deadline",
+      "value": 30,
+      "unit": "September",
+      "evidence": "Submission of picture. They are going. B.A.F.P.A. Students can pay the examination fee. Before. 31st March 2027."
+    }
+  ],
+  "missing_inputs": [
+    {
+      "label": "Total number of students",
+      "why_needed": "To calculate the absolute impact of errors (e.g., invalid center changes, incomplete assignments) and revenue leakage.",
+      "unit": "students"
+    },
+    {
+      "label": "Number of invalid examination center change requests",
+      "why_needed": "To quantify the administrative overhead and error rate.",
+      "unit": "requests"
+    },
+    {
+      "label": "Number of incomplete assignments",
+      "why_needed": "To calculate the percentage of rework required.",
+      "unit": "assignments"
+    },
+    {
+      "label": "Number of students who missed re-registration deadlines",
+      "why_needed": "To calculate the revenue leakage and capacity loss.",
+      "unit": "students"
+    },
+    {
+      "label": "Average processing time for study center changes",
+      "why_needed": "To measure the efficiency gain from automation.",
+      "unit": "days"
+    },
+    {
+      "label": "Average time taken to pay practical fees",
+      "why_needed": "To measure the efficiency gain from automation.",
+      "unit": "days"
+    },
+    {
+      "label": "Cost per manual correction or administrative hour",
+      "why_needed": "To translate time savings into monetary savings.",
+      "unit": "currency"
+    }
+  ],
+  "analysis_notes": [
+    "The meeting transcript is an induction session for students, focusing on explaining existing processes rather than detailing operational inefficiencies.",
+    "While the transcript mentions several pain points (e.g., invalid center changes, incomplete assignments, missed re-registration), it does not provide the quantitative data (e.g., number of students, number of errors) required to calculate specific business impacts.",
+    "The opportunities identified are based on the explicit problems described by the client, but the calculations are illustrative scenarios because the necessary inputs are missing from the meeting.",
+    "The transcript also contains several instances of unclear or garbled speech (e.g., 'Singh' instead of 'losing', 'RC Trivandrum 6042' instead of '4000'), which have been interpreted based on the context of IGNOU regional center codes provided in the verified requirements."
+  ]
+}

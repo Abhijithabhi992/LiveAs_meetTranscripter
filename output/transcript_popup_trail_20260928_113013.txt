@@ -1,0 +1,141 @@
+[00:36] You: Hello
+[00:42] You: Hello.
+[00:47] You: Hello hello.
+[01:04] You: I am saying.
+[01:17] You: Hello.
+[01:26] You: Bye bye.
+[01:33] You: Hello
+[01:37] You: Hello.
+[01:46] You: Hello
+[02:04] You: Hello?
+[02:04] Client: Hello
+[02:13] You: Sir, what work?
+[02:23] You: Okay.
+[02:23] Client: Okay.
+[02:32] Client: Hmm.
+[02:36] Client: If we were to contest now, we mainly needed a project. When we say our project...
+[02:39] You: Money
+[02:40] Client: Ah, that is, we needed it based on ANC.
+[02:43] You: It needs some ANC packing in it.
+[02:43] Client: Means, some things related to ANC were needed in that.
+[02:45] You: So, how was it back then?
+[02:46] Client: Ah, how was it then?
+[02:47] Client: So we can
+[02:51] You: What is happening?
+[02:51] Client: One second
+[02:55] You: Okay, how were we supposed to get the answer?
+[02:55] Client: Okay, how were we supposed to get ANC?
+[03:01] You: Isn't it Kinnambad instead of AIIMS?
+[03:01] Client: Aims and colors are hard to get, aren't they?
+[03:05] Client: But.
+[03:06] You: It's okay, no problem.
+[03:06] Client: But it's not popping up, you know.
+[03:10] Client: Okay.
+[03:11] You: Okay.
+[03:13] You: The MC is not popping up.
+[03:13] Client: Okay, the MC is not popping up.
+[03:15] You: Okay okay okay okay okay.
+[03:15] Client: Ah, okay okay okay okay okay.
+[03:20] You: Now, an admission staff is needed.
+[03:20] Client: We need an admin and staff now. If it is within that,
+[03:28] Client: Ah
+[03:36] You: Okay, how will the AMC be for us?
+[03:37] Client: Okay, how would AMC be for us?
+[03:53] Client: Yes.
+[03:53] Client: Okay.
+[03:56] You: If there is a place to sit.
+[03:58] You: Need staff, need clothes.
+[03:58] Client: If we need that, we need an admin, we need staff, and logins.
+[03:59] You: If there is anything else, we can go now.
+[03:59] Client: Then if we have, we can
+[04:00] You: Total 10 clients.
+[04:02] You: There were 10 clients, clients, and 10 staffs.
+[04:03] Client: Total 10 clients, not clients, sorry, there were 10 staffs.
+[04:06] You: Then, we have a program that includes some summaries.
+[04:06] Client: Then, ours is a service-oriented program.
+[04:09] You: So, we have a client.
+[04:09] Client: Now, our client
+[04:15] You: If there is a request to service the AC, which is nearby to service and request?
+[04:15] Client: Put a request. If their AC needs servicing now, when you put a request for service, which is nearby...
+[04:19] You: It seems like a service agent. And that too, their, now earlier I was here.
+[04:19] Client: It is a service agent. And also, they were earlier
+[04:19] Client: App
+[04:20] You: If you have gone for the service,
+[04:21] Client: If you have gone for service,
+[04:22] You: Our staff
+[04:23] Client: Our staff.
+[04:24] You: If you have gone and posted any negative reviews now.
+[04:25] Client: If you have gone and posted any negative reviews now,
+[04:26] You: By skipping them.
+[04:26] Client: Skip them.
+[04:27] Client: By skipping.
+[04:28] You: in another nearby area
+[04:29] Client: Any other nearby
+[04:29] Client: Most
+[04:30] You: The most interesting thing is
+[04:30] Client: The nearest
+[04:31] Client: Okay.
+[04:35] You: Assign the staff. That is, assign them to go to their service.
+[04:35] Client: Assign the staff. That is, assign them to go to the service there.
+[04:39] Client: That is, if it is a move, the staff standing closest now will have a negative review.
+[04:40] You: That is, if I were to say now, if you give it now, the staff will get a negative review from that house.
+[04:40] You: It happens.
+[04:41] Client: If it was made when leaving the house,
+[04:44] You: That is what I assigned. I assigned the next staff.
+[04:45] You: Similarly, to that staff.
+[04:45] Client: Assign the next staff without assigning him. Similarly, to that staff
+[04:51] You: Now, if a staff is assigned, and if they have more workload, then automatically another staff is being assigned.
+[04:51] Client: Now, if a staff is assigned, and if they have more workload, there is an option to automatically assign another staff.
+[04:52] You: Process it.
+[04:52] Client: Process.
+[04:54] You: That is you who has been arrested.
+[04:54] Client: That is the nearest one.
+[04:55] You: Then
+[04:56] You: Hmm
+[04:56] Client: Then, ah
+[04:57] Client: Staff's work.
+[04:59] You: Staff's working and their
+[04:59] Client: Working and their
+[05:00] You: Daily chat.
+[05:00] Client: Daily start.
+[05:00] Client: Okay.
+[05:01] You: Actually.
+[05:01] Client: Admin.
+[05:03] You: The mail will go automatically daily.
+[05:04] You: Thanks for that.
+[05:04] Client: Mail goes automatically daily.
+[05:06] You: Just like punching.
+[05:06] Client: Then, just like punching.
+[05:08] You: Go to each site and then to the one there.
+[05:09] You: The option to take a photo and upload it.
+[05:09] Client: The option to go to each site and take a photo of it and upload it.
+[05:10] You: Give the option like that.
+[05:10] Client: Give all the options.
+[05:12] Client: Hmm hmm.
+[05:13] Client: That's all there is. Then service.
+[05:16] You: That's all. Then, as soon as they do the service report, we can get the report.
+[05:16] Client: We can report as soon as they do the report.
+[05:19] You: There is an option to generate and automatically send to WhatsApp and email.
+[05:19] Client: Generate it and keep the option to go to WhatsApp and email automatically.
+[05:23] You: What we mainly need is, and then managing the service call.
+[05:23] Client: That is what we mainly need. And then managing the service call.
+[05:26] You: Managed everything AI-based and used an AI assistant.
+[05:27] You: Back.
+[05:27] Client: Managing everything AI-based and using an AI assistant.
+[05:27] Client: Back.
+[05:28] You: I am going to give the reply theme.
+[05:29] Client: Reply and give a note.
+[05:32] You: It would be good if WhatsApp integration could be done like this.
+[05:32] Client: Similarly, it would be good if we could do a WhatsApp integration. That way, we can
+[05:32] You: When that happens, we can
+[05:35] You: Whatever we need to report, we can report it.
+[05:37] You: If you have any doubts, message me.
+[05:37] Client: If they have any doubts about what to report, send a message to the same assistant.
+[05:37] Client: That means
+[05:38] You: I will reply on WhatsApp.
+[05:39] Client: Will reply through WhatsApp.
+[05:52] You: Okay sir, it will take us approximately one month to do this project.
+[05:55] You: Similarly, approximately one
+[05:59] You: ₹1 lakh rupees or ₹1.5 lakh, ₹1.5 lakh.
+[06:00] You: It will cost ₹100 to get this done.
+[06:03] You: Then, it will vary depending on the increase in the number of staff.

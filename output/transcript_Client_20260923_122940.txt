@@ -1,0 +1,61 @@
+[00:07] You: Hello
+[00:08] You: Now, according to the data.
+[00:17] Client: Okay, good afternoon, good afternoon.
+[00:18] Client: Last one.
+[00:41] You: Sir, what was your purpose? That is, what were you looking for? We basically...
+[00:45] You: Customize software was being developed for you.
+[00:47] You: What was your requirement?
+[00:53] Client: When we say 'us', if we have one
+[00:57] Client: What to say, we have an HVAC company.
+[00:59] Client: Let's have a
+[01:03] Client: We need a web application. The admin staff needs two logins. Similarly, we need
+[01:06] Client: When a service request is raised
+[01:07] Client: That service request
+[01:16] Client: It should go like this. That is, we need to get a service request. And then the service request should go as an email, as a document, as a PDF. There should be an option to download it.
+[01:20] Client: Similarly, customers should be able to log in using their mobile number and bill number.
+[01:22] Client: Then what is it like for admins?
+[01:26] Client: Need an option to assign, edit, and delete staff.
+[01:26] Client: Needed.
+[01:27] Client: Similarly.
+[01:28] Client: To these mentioned staffs
+[01:33] Client: That is, for the admins, after selecting each staff, for them
+[01:39] Client: You can assign the pending service request. And to update the status of that assignment.
+[01:44] Client: After updating and it continues, meaning after it is confirmed, that is, after the work is completed.
+[01:45] Client: Let me tell you.
+[01:48] Client: Rick means report status.
+[01:51] Client: There is an option to give. That is, you can also give an option to go as mail.
+[01:54] Client: What comes next?
+[01:56] Client: Admins, as mentioned, for admins.
+[01:57] Client: What is it?
+[02:05] Client: We need to be able to control the staff. That's mainly what we need. Then, to add products, add categories, delete products, add bills, delete bills, delete bills.
+[02:06] Client: To edit.
+[02:07] Client: The admin needs all such options.
+[02:21] You: Okay sir, we can do all this. Similarly, if we want to do any additional implementation within this, we can set up a chatbot through that and keep such an option to contact us.
+[02:23] You: So, that's how we can do it.
+[02:27] Client: Okay, how is the payment for this, sir?
+[02:30] Client: Let me tell you the details of the server. How should we provide the server?
+[02:31] Client: Are you including the server?
+[02:32] Client: doing.
+[02:41] You: We are not doing it including the Rainbow server. If we want the server, we are doing it for ₹4000 per annum.
+[02:46] You: You can only serve if you close it. Otherwise, that is what we are giving as a proposal. If you want the server, it is in your hand.
+[02:48] You: If there is an existing server
+[02:53] You: We can use that. If not, you can buy the server and manage it however you want.
+[02:57] You: And then the payment matter is correct, sir.
+[03:03] You: Create, that is, if the requirements are correctly stated, I can create and submit the proposal.
+[03:06] You: If that's okay, we can tell the payment based on that.
+[03:08] You: It is approximately ₹1.5 lakh.
+[03:16] Client: Okay, whatever you do, please update it.
+[03:19] Client: Please submit the proposal today itself. We have a meeting that day.
+[03:21] Client: Was getting off, okay.
+[03:22] Client: Yes, yes, yes.
+[03:23] Client: Thank you.
+[03:25] Client: After discussing, I will tell you what it is.
+[03:28] You: Okay sir.
+[03:30] You: If it's us, then sir.
+[03:34] You: I will share its preference today itself. Similarly,
+[03:35] You: Ah...
+[03:38] You: If there is anything, sir, you can contact us. Do contact us.
+[03:41] You: Okay, our place is Kollam Malathunkuzhy.
+[03:42] You: Okay sir.
+[03:43] You: Thank you.
+[03:44] You: It didn't happen quickly.

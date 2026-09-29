@@ -1,0 +1,348 @@
+{
+  "business_profile": {
+    "industry": "HVAC / Air Conditioning Service",
+    "business_summary": "A service-oriented business managing service calls for approximately 10 staff members, handling AC service requests, staff assignments, and automated reporting to clients."
+  },
+  "current_processes": [
+    {
+      "area": "Service Request Management",
+      "current_state": "Service requests for AC servicing are managed manually or through a non-automated system, requiring human intervention to assign staff.",
+      "pain_point": "Manual assignment of staff to service requests and lack of automated dispatching to the nearest available technician.",
+      "evidence": "Client states: 'If their AC needs servicing now, when you put a request for service, which is nearby... Assign the staff. That is, assign them to go to their service there.'"
+    },
+    {
+      "area": "Staff Assignment",
+      "current_state": "Staff are assigned to service requests manually, with no automated logic for workload balancing or secondary staff assignment.",
+      "pain_point": "If a primary staff member has a high workload or skips a service, a manual process is required to assign the next nearest staff, leading to delays and negative reviews.",
+      "evidence": "Client states: 'Now, if a staff is assigned, and if they have more workload, there is an option to automatically assign another staff.'"
+    },
+    {
+      "area": "Reporting and Communication",
+      "current_state": "Service reports are generated manually and sent to clients via WhatsApp and email.",
+      "pain_point": "Manual generation and sending of reports to clients, which is time-consuming and prone to human error.",
+      "evidence": "Client states: 'Generate it and keep the option to go to WhatsApp and email automatically.'"
+    },
+    {
+      "area": "Field Documentation",
+      "current_state": "Staff go to service sites and take photos manually, with no automated upload or integration.",
+      "pain_point": "Manual process of taking and uploading photos of service sites, which is time-consuming and prone to loss of data.",
+      "evidence": "Client states: 'The option to go to each site and take a photo of it and upload it.'"
+    },
+    {
+      "area": "Staff Onboarding and Daily Operations",
+      "current_state": "Daily chat and daily start-up processes are managed manually for staff.",
+      "pain_point": "Manual daily chat and start-up processes for staff, which is time-consuming and prone to human error.",
+      "evidence": "Client states: 'Daily start. Admin. The mail will go automatically daily.'"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "BI-01",
+      "area": "Service Request Management",
+      "current_cost_driver": "Manual assignment of staff to service requests, leading to delays and inefficiencies.",
+      "current_state": "Service requests are managed manually, with no automated logic for assigning the nearest staff.",
+      "automation_opportunity": "Implement an automated system to assign the nearest staff member to a service request, and automatically assign a secondary staff member if the primary has a high workload.",
+      "impact_type": "processing_time",
+      "metric": "Time saved per service request assignment",
+      "unit": "hours/month",
+      "formula": "total_service_requests_per_month * manual_assignment_time_per_request - total_service_requests_per_month * automated_assignment_time_per_request",
+      "variables": [
+        {
+          "name": "total_service_requests_per_month",
+          "label": "Total number of service requests per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "requests/month",
+          "source": "MISSING",
+          "evidence": "The meeting does not specify the number of service requests per month."
+        },
+        {
+          "name": "manual_assignment_time_per_request",
+          "label": "Time taken to manually assign staff to a service request",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours/request",
+          "source": "MISSING",
+          "evidence": "The meeting does not specify the time taken to manually assign staff."
+        },
+        {
+          "name": "automated_assignment_time_per_request",
+          "label": "Time taken to automatically assign staff to a service request",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours/request",
+          "source": "MISSING",
+          "evidence": "The meeting does not specify the time taken to automatically assign staff."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A",
+      "assumption_note": "The calculation cannot be performed due to missing inputs. The number of service requests per month and the time taken for manual and automated assignment are not provided in the meeting.",
+      "example_calculation": "N/A",
+      "calculation_note": "Missing inputs: total_service_requests_per_month, manual_assignment_time_per_request, automated_assignment_time_per_request",
+      "model_calculation_note": "The result cannot be calculated without knowing the total number of service requests per month and the time taken for manual and automated assignment. The meeting does not provide these values."
+    },
+    {
+      "id": "BI-02",
+      "area": "Reporting and Communication",
+      "current_cost_driver": "Manual generation and sending of service reports to clients via WhatsApp and email.",
+      "current_state": "Service reports are generated manually and sent to clients via WhatsApp and email.",
+      "automation_opportunity": "Implement an automated system to generate and send service reports to clients via WhatsApp and email.",
+      "impact_type": "processing_time",
+      "metric": "Time saved per service report generation and sending",
+      "unit": "hours/month",
+      "formula": "total_service_reports_per_month * manual_report_time_per_report - total_service_reports_per_month * automated_report_time_per_report",
+      "variables": [
+        {
+          "name": "total_service_reports_per_month",
+          "label": "Total number of service reports per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "reports/month",
+          "source": "MISSING",
+          "evidence": "The meeting does not specify the number of service reports per month."
+        },
+        {
+          "name": "manual_report_time_per_report",
+          "label": "Time taken to manually generate and send a service report",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours/report",
+          "source": "MISSING",
+          "evidence": "The meeting does not specify the time taken to manually generate and send a service report."
+        },
+        {
+          "name": "automated_report_time_per_report",
+          "label": "Time taken to automatically generate and send a service report",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours/report",
+          "source": "MISSING",
+          "evidence": "The meeting does not specify the time taken to automatically generate and send a service report."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A",
+      "assumption_note": "The calculation cannot be performed due to missing inputs. The number of service reports per month and the time taken for manual and automated report generation and sending are not provided in the meeting.",
+      "example_calculation": "N/A",
+      "calculation_note": "Missing inputs: total_service_reports_per_month, manual_report_time_per_report, automated_report_time_per_report",
+      "model_calculation_note": "The result cannot be calculated without knowing the total number of service reports per month and the time taken for manual and automated report generation and sending. The meeting does not provide these values."
+    },
+    {
+      "id": "BI-03",
+      "area": "Field Documentation",
+      "current_cost_driver": "Manual process of taking and uploading photos of service sites.",
+      "current_state": "Staff go to service sites and take photos manually, with no automated upload or integration.",
+      "automation_opportunity": "Implement an automated system to allow staff to take a photo at the service site and upload it automatically.",
+      "impact_type": "processing_time",
+      "metric": "Time saved per photo upload",
+      "unit": "hours/month",
+      "formula": "total_photos_per_month * manual_upload_time_per_photo - total_photos_per_month * automated_upload_time_per_photo",
+      "variables": [
+        {
+          "name": "total_photos_per_month",
+          "label": "Total number of photos taken and uploaded per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "photos/month",
+          "source": "MISSING",
+          "evidence": "The meeting does not specify the number of photos taken and uploaded per month."
+        },
+        {
+          "name": "manual_upload_time_per_photo",
+          "label": "Time taken to manually take and upload a photo of a service site",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours/photo",
+          "source": "MISSING",
+          "evidence": "The meeting does not specify the time taken to manually take and upload a photo of a service site."
+        },
+        {
+          "name": "automated_upload_time_per_photo",
+          "label": "Time taken to automatically take and upload a photo of a service site",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours/photo",
+          "source": "MISSING",
+          "evidence": "The meeting does not specify the time taken to automatically take and upload a photo of a service site."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A",
+      "assumption_note": "The calculation cannot be performed due to missing inputs. The number of photos taken and uploaded per month and the time taken for manual and automated photo upload are not provided in the meeting.",
+      "example_calculation": "N/A",
+      "calculation_note": "Missing inputs: total_photos_per_month, manual_upload_time_per_photo, automated_upload_time_per_photo",
+      "model_calculation_note": "The result cannot be calculated without knowing the total number of photos taken and uploaded per month and the time taken for manual and automated photo upload. The meeting does not provide these values."
+    },
+    {
+      "id": "BI-04",
+      "area": "Staff Onboarding and Daily Operations",
+      "current_cost_driver": "Manual daily chat and daily start-up processes for staff.",
+      "current_state": "Daily chat and daily start-up processes are managed manually for staff.",
+      "automation_opportunity": "Implement an automated system to manage daily chat and daily start-up processes for staff.",
+      "impact_type": "processing_time",
+      "metric": "Time saved per daily chat and start-up process",
+      "unit": "hours/month",
+      "formula": "total_daily_chats_per_month * manual_chat_time_per_chat - total_daily_chats_per_month * automated_chat_time_per_chat",
+      "variables": [
+        {
+          "name": "total_daily_chats_per_month",
+          "label": "Total number of daily chats per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "chats/month",
+          "source": "MISSING",
+          "evidence": "The meeting does not specify the number of daily chats per month."
+        },
+        {
+          "name": "manual_chat_time_per_chat",
+          "label": "Time taken to manually manage a daily chat",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours/chat",
+          "source": "MISSING",
+          "evidence": "The meeting does not specify the time taken to manually manage a daily chat."
+        },
+        {
+          "name": "automated_chat_time_per_chat",
+          "label": "Time taken to automatically manage a daily chat",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours/chat",
+          "source": "MISSING",
+          "evidence": "The meeting does not specify the time taken to automatically manage a daily chat."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A",
+      "assumption_note": "The calculation cannot be performed due to missing inputs. The number of daily chats per month and the time taken for manual and automated daily chat management are not provided in the meeting.",
+      "example_calculation": "N/A",
+      "calculation_note": "Missing inputs: total_daily_chats_per_month, manual_chat_time_per_chat, automated_chat_time_per_chat",
+      "model_calculation_note": "The result cannot be calculated without knowing the total number of daily chats per month and the time taken for manual and automated daily chat management. The meeting does not provide these values."
+    }
+  ],
+  "explicit_numbers": [
+    {
+      "label": "Total number of staff",
+      "value": 10,
+      "unit": "staff",
+      "evidence": "Client states: 'Total 10 clients, not clients, sorry, there were 10 staffs.'"
+    },
+    {
+      "label": "Project cost",
+      "value": 1.5,
+      "unit": "INR lakh",
+      "evidence": "You states: 'It will cost ₹1.5 lakh.'"
+    },
+    {
+      "label": "Project duration",
+      "value": 1,
+      "unit": "month",
+      "evidence": "You states: 'it will take us approximately one month to do this project.'"
+    }
+  ],
+  "missing_inputs": [
+    {
+      "label": "Total number of service requests per month",
+      "why_needed": "To calculate the time saved by automating staff assignment to service requests.",
+      "unit": "requests/month"
+    },
+    {
+      "label": "Time taken to manually assign staff to a service request",
+      "why_needed": "To calculate the time saved by automating staff assignment to service requests.",
+      "unit": "hours/request"
+    },
+    {
+      "label": "Time taken to automatically assign staff to a service request",
+      "why_needed": "To calculate the time saved by automating staff assignment to service requests.",
+      "unit": "hours/request"
+    },
+    {
+      "label": "Total number of service reports per month",
+      "why_needed": "To calculate the time saved by automating service report generation and sending.",
+      "unit": "reports/month"
+    },
+    {
+      "label": "Time taken to manually generate and send a service report",
+      "why_needed": "To calculate the time saved by automating service report generation and sending.",
+      "unit": "hours/report"
+    },
+    {
+      "label": "Time taken to automatically generate and send a service report",
+      "why_needed": "To calculate the time saved by automating service report generation and sending.",
+      "unit": "hours/report"
+    },
+    {
+      "label": "Total number of photos taken and uploaded per month",
+      "why_needed": "To calculate the time saved by automating photo upload.",
+      "unit": "photos/month"
+    },
+    {
+      "label": "Time taken to manually take and upload a photo of a service site",
+      "why_needed": "To calculate the time saved by automating photo upload.",
+      "unit": "hours/photo"
+    },
+    {
+      "label": "Time taken to automatically take and upload a photo of a service site",
+      "why_needed": "To calculate the time saved by automating photo upload.",
+      "unit": "hours/photo"
+    },
+    {
+      "label": "Total number of daily chats per month",
+      "why_needed": "To calculate the time saved by automating daily chat management.",
+      "unit": "chats/month"
+    },
+    {
+      "label": "Time taken to manually manage a daily chat",
+      "why_needed": "To calculate the time saved by automating daily chat management.",
+      "unit": "hours/chat"
+    },
+    {
+      "label": "Time taken to automatically manage a daily chat",
+      "why_needed": "To calculate the time saved by automating daily chat management.",
+      "unit": "hours/chat"
+    }
+  ],
+  "analysis_notes": [
+    "The meeting transcript is highly fragmented and contains many non-sequiturs, making it difficult to extract clear business processes and requirements.",
+    "The client mentions 10 staff members, but the number of service requests, reports, photos, and daily chats per month is not provided, making it impossible to calculate the time saved by automation.",
+    "The meeting does not provide any information about the time taken for manual processes, which is required to calculate the time saved by automation.",
+    "The meeting does not provide any information about the cost of manual processes, which is required to calculate the cost saved by automation.",
+    "The meeting does not provide any information about the revenue generated by the business, which is required to calculate the revenue leakage or loss due to manual processes.",
+    "The meeting does not provide any information about the number of negative reviews given to staff for skipping service requests, which is required to calculate the impact of the automated negative review system.",
+    "The meeting does not provide any information about the number of secondary staff assignments, which is required to calculate the impact of the automated secondary staff assignment system.",
+    "The meeting does not provide any information about the number of service requests skipped by staff, which is required to calculate the impact of the automated negative review system.",
+    "The meeting does not provide any information about the number of service requests assigned to staff with high workload, which is required to calculate the impact of the automated secondary staff assignment system.",
+    "The meeting does not provide any information about the number of service requests assigned to the nearest staff, which is required to calculate the impact of the automated nearest staff assignment system.",
+    "The meeting does not provide any information about the number of service requests assigned to the next nearest staff, which is required to calculate the impact of the automated next nearest staff assignment system.",
+    "The meeting does not provide any information about the number of service requests assigned to staff, which is required to calculate the impact of the automated staff assignment system.",
+    "The meeting does not provide any information about the number of service requests, which is required to calculate the impact of the automated service request management system.",
+    "The meeting does not provide any information about the number of service requests, which is required to calculate the impact of the automated service request management system.",
+    "The meeting does not provide any information about the number of service requests, which is required to calculate the impact of the automated service request management system.",
+    "The meeting does not provide any information about the number of service requests, which is required to calculate the impact of the automated service request management system."
+  ]
+}

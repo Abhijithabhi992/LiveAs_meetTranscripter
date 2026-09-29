@@ -1,0 +1,219 @@
+{
+  "business_profile": {
+    "industry": "HVAC Service and Maintenance",
+    "business_summary": "An HVAC service company with 10 to 12 staff handling service requests and complaints. They require a web application to automate the intake, assignment, and tracking of service requests, as well as reporting on technician performance and sales."
+  },
+  "current_processes": [
+    {
+      "area": "Service Request Handling",
+      "current_state": "Service requests and complaints are handled manually, requiring staff to sit behind a desk to process, assign, and track the status of cases.",
+      "pain_point": "Manual handling consumes a lot of time, requires dedicated staff, and lacks automated status tracking (e.g., reached, done, finished, pending).",
+      "evidence": "Client states: 'There are difficulties in handling and a lot of time is being spent on it... This is basically what is needed... The system I need to solve now.'"
+    },
+    {
+      "area": "Technician Assignment",
+      "current_state": "Technicians are manually assigned service requests based on physical proximity and manager discretion, without an automated algorithm.",
+      "pain_point": "Assignments are inefficient, potentially ignoring technician workload, negative feedback, or recent returns, leading to poor customer satisfaction.",
+      "evidence": "Client states: 'This automatic assignment should happen... It needs to be mapped to the location of the technician... If someone has given a return, then they should not be assigned... The assignment should be executed efficiently by using some kind of algorithm.'"
+    },
+    {
+      "area": "Technician Performance Reporting",
+      "current_state": "There is no automated system to generate daily graphical reports of technician work activities, including service charges collected and new products sold.",
+      "pain_point": "Management lacks real-time visibility into daily technician productivity and sales, relying on manual tracking or basic Excel filters.",
+      "evidence": "Client states: 'Daily... Work activities... In a graphical way... How many service requests were attended? How many were closed, how many service charges were collected? How much? New product Sold.'"
+    },
+    {
+      "area": "Customer Communication",
+      "current_state": "Customers submit service requests and complaints via mobile phone, but there is no automated system to process these requests.",
+      "pain_point": "The manual processing of mobile-submitted requests creates a bottleneck and delays the start of the service workflow.",
+      "evidence": "Client states: 'There is a mobile phone. To that phone Customer with requests as you like... Let it be.'"
+    },
+    {
+      "area": "Manager Notifications",
+      "current_state": "Managers do not receive automated email alerts regarding pending service cases.",
+      "pain_point": "Managers lack proactive alerts on pending cases, leading to delays in intervention or resource reallocation.",
+      "evidence": "Client states: 'There is a particular mail ID in the office... Each technician. What all did you do that day?... We need another system in a different way.'"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "BI-01",
+      "area": "Service Request Handling",
+      "current_cost_driver": "Manual administrative time spent by staff to process, assign, and track service requests.",
+      "current_state": "Staff manually handle service requests and complaints, tracking status in real-time without an automated system.",
+      "automation_opportunity": "Implement a web application that automatically captures mobile requests, assigns them, and tracks their status (reached, done, finished, pending).",
+      "impact_type": "admin_time",
+      "metric": "Hours saved per month on administrative processing",
+      "unit": "hours/month",
+      "formula": "total_requests_per_month * hours_per_request_manual",
+      "variables": [
+        {
+          "name": "total_requests_per_month",
+          "label": "Total number of service requests received per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "requests/month",
+          "source": "MISSING",
+          "evidence": "Client mentions '10, 21. Crisp is happening' and 'Daily' requests, but no specific volume is provided."
+        },
+        {
+          "name": "hours_per_request_manual",
+          "label": "Average time spent by staff to manually process one service request",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours/request",
+          "source": "MISSING",
+          "evidence": "Client states 'a lot of time is being spent on it' but does not quantify the time per request."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A",
+      "assumption_note": "N/A",
+      "example_calculation": "N/A",
+      "calculation_note": "Missing inputs: total_requests_per_month, hours_per_request_manual",
+      "model_calculation_note": "The calculation cannot be performed as the total monthly request volume and the average time spent per request are not provided in the meeting."
+    },
+    {
+      "id": "BI-02",
+      "area": "Technician Assignment",
+      "current_cost_driver": "Inefficient manual assignment of technicians based on physical proximity rather than workload or performance.",
+      "current_state": "Technicians are assigned requests manually, which may ignore their current load, negative feedback, or recent returns.",
+      "automation_opportunity": "Implement an intelligent algorithm that automatically assigns requests based on technician location, current load, and performance history (excluding negative feedback or recent returns).",
+      "impact_type": "capacity_recovery",
+      "metric": "Number of requests incorrectly assigned due to manual process",
+      "unit": "requests/month",
+      "formula": "total_requests_per_month * error_rate_manual_assignment",
+      "variables": [
+        {
+          "name": "total_requests_per_month",
+          "label": "Total number of service requests received per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "requests/month",
+          "source": "MISSING",
+          "evidence": "Client mentions '10, 21. Crisp is happening' and 'Daily' requests, but no specific volume is provided."
+        },
+        {
+          "name": "error_rate_manual_assignment",
+          "label": "Estimated rate of incorrect assignments due to manual process",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "percentage",
+          "source": "MISSING",
+          "evidence": "Client mentions 'difficulties in handling' and 'a lot of time is being spent' but does not quantify the error rate."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A",
+      "assumption_note": "N/A",
+      "example_calculation": "N/A",
+      "calculation_note": "Missing inputs: total_requests_per_month, error_rate_manual_assignment",
+      "model_calculation_note": "The calculation cannot be performed as the total monthly request volume and the error rate of manual assignment are not provided in the meeting."
+    },
+    {
+      "id": "BI-03",
+      "area": "Technician Performance Reporting",
+      "current_cost_driver": "Time spent by management to manually compile daily reports on technician work activities, service charges collected, and new products sold.",
+      "current_state": "Management manually tracks or uses basic Excel filters to generate reports on technician performance, rather than having a graphical system.",
+      "automation_opportunity": "Implement a system that generates daily graphical reports of technician work activities, including requests attended, closed, service charges collected, and new products sold.",
+      "impact_type": "reporting_time",
+      "metric": "Hours saved per month on manual report generation",
+      "unit": "hours/month",
+      "formula": "total_technicians * hours_per_report_generation",
+      "variables": [
+        {
+          "name": "total_technicians",
+          "label": "Total number of technicians",
+          "value": 10,
+          "low_value": 10,
+          "high_value": 12,
+          "unit": "count",
+          "source": "MEETING",
+          "evidence": "Client states: 'There are 10 to 12 staff to handle the service.'"
+        },
+        {
+          "name": "hours_per_report_generation",
+          "label": "Average time spent by management to manually generate one daily report",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours/day",
+          "source": "MISSING",
+          "evidence": "Client states: 'We need another system in a different way' but does not quantify the time spent on current reporting."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "N/A",
+      "assumption_note": "N/A",
+      "example_calculation": "N/A",
+      "calculation_note": "Missing inputs: hours_per_report_generation",
+      "model_calculation_note": "The calculation cannot be performed as the time spent on manual report generation is not provided in the meeting."
+    }
+  ],
+  "explicit_numbers": [
+    {
+      "label": "Number of staff to handle service",
+      "value": 10,
+      "unit": "count",
+      "evidence": "Client states: 'There are 10 to 12 staff to handle the service.'"
+    },
+    {
+      "label": "Maximum number of staff to handle service",
+      "value": 12,
+      "unit": "count",
+      "evidence": "Client states: 'There are 10 to 12 staff to handle the service.'"
+    },
+    {
+      "label": "Estimated project cost",
+      "value": 100000,
+      "unit": "currency",
+      "evidence": "You states: 'Approximately one... It should be within one lakh.'"
+    }
+  ],
+  "missing_inputs": [
+    {
+      "label": "Total monthly service request volume",
+      "why_needed": "Required to calculate the time saved from automating request handling and the number of incorrect assignments.",
+      "unit": "requests/month"
+    },
+    {
+      "label": "Average time spent per request in manual handling",
+      "why_needed": "Required to calculate the total monthly administrative time saved.",
+      "unit": "hours/request"
+    },
+    {
+      "label": "Average time spent on manual report generation",
+      "why_needed": "Required to calculate the monthly reporting time saved.",
+      "unit": "hours/day"
+    },
+    {
+      "label": "Hourly rate of dedicated staff",
+      "why_needed": "Required to convert time savings into monetary savings.",
+      "unit": "currency/hour"
+    },
+    {
+      "label": "Number of managers generating reports",
+      "why_needed": "Required to accurately calculate the total monthly reporting time saved.",
+      "unit": "count"
+    }
+  ],
+  "analysis_notes": [
+    "The meeting transcript is heavily fragmented and contains many unclear phrases (e.g., '10, 21. Crisp is happening'). The business context is inferred from the explicit requirements in the 'VERIFIED CUSTOMER REQUIREMENTS' section, which is supported by the client's statements about AC service and technician assignments.",
+    "The client explicitly requests automatic assignment, but the meeting transcript shows a conflict where the client says 'This automatic assignment should happen' and later 'This doesn't require any AI. In a normal way. Just do it like this.' This indicates a preference for a non-AI, rule-based algorithm.",
+    "The client mentions a WhatsApp chatbot for HVAC requests, but the meeting does not provide enough detail to quantify its impact. It is noted in the requirements but not in the main transcript discussion.",
+    "The estimated cost of 'one lakh' (100,000) is a software development/implementation cost, not an operational benefit or saving. It is included as an explicit number but not used to calculate ROI as per the rules."
+  ]
+}

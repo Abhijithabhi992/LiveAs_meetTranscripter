@@ -1,0 +1,29 @@
+{
+  "business_profile": {
+    "industry": "None",
+    "business_summary": "The transcript is highly fragmented and does not provide enough context to determine the industry or summarize the business profile. The only substantive mention is 'Pisa company, Pisa is working now' and a technical issue with a 'pause option' not working."
+  },
+  "current_processes": [
+    {
+      "area": "N/A",
+      "current_state": "Unable to determine a coherent business process from the transcript.",
+      "pain_point": "Unable to determine a pain point from the transcript.",
+      "evidence": "The transcript consists of disjointed, incomplete phrases ('It is a little bit of comfort', 'This is not coming line by line', 'The pause option is not working')."
+    }
+  ],
+  "opportunities": [],
+  "explicit_numbers": [
+    {
+      "label": "Number of times 'Pisa' was mentioned",
+      "value": 2,
+      "unit": "count",
+      "evidence": "Meeting transcript: 'Pisa, Pisa company, Pisa is working now, right?'"
+    }
+  ],
+  "missing_inputs": [],
+  "analysis_notes": [
+    "The meeting transcript is too fragmented and lacks substantive business context to identify any measurable cost, time, capacity, or operational-efficiency opportunities.",
+    "The phrase 'The pause option is not working' indicates a potential technical issue or a feature request, but without context on what system, process, or business function it relates to, no business impact can be calculated.",
+    "No customer statements about current processes, automation requests, or measurable impacts are present in a form that supports analysis."
+  ]
+}

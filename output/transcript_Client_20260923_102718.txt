@@ -1,0 +1,15 @@
+[00:09] Client: Hello
+[00:22] You: It is English or Math.
+[00:24] You: There are two mixed items, mic.
+[00:31] Client: Where are you calling from now?
+[00:36] You: So we were in Live SC.
+[00:41] Client: Okay, you customer
+[00:44] Client: Do you do custom software development and stuff?
+[00:48] You: Yes sir, we were mainly doing custom software.
+[00:52] You: Sir, if you could tell me the requirements, I could explain how it is.
+[01:00] You: Same here.
+[01:04] Client: Okay, regarding the requirements, what we mainly need is service software. And things like AMC tracking related to service, right?
+[01:05] Client: That's all that is needed.
+[01:10] You: Okay sir, we were doing all that. Everything was correct, what I mean is, we were doing it.
+[01:16] You: If you want to write, write.
+[01:38] You: Now look, it needs to be swift, its

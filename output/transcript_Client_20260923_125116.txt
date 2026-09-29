@@ -1,0 +1,62 @@
+[00:15] You: Hello, good afternoon sir, good afternoon.
+[02:13] Client: Ah, hello, hello, tell me.
+[02:18] You: Sir
+[02:19] You: Ah...
+[02:26] You: Our company's name was Laves Technology. We were based in Kollam.
+[02:27] You: Banyan trees
+[02:30] You: What were your requirements?
+[02:32] You: If it was said, accordingly we
+[02:35] You: To say, we are mainly customized, mostly customized.
+[02:37] You: It is software building.
+[02:43] Client: Okay.
+[02:45] Client: Okay, when we say 'we', we mean an HVAC.
+[02:46] Client: Of the company
+[02:49] Client: What was needed was software, what was needed was a web application. When we talk about within that,
+[02:55] Client: We have two users, the admin and the staff. We only have about five staff members close to us right now. They will only log in until then.
+[03:00] Client: Now, if you are an admin, you need an option to assign, delete, and add staff.
+[03:00] Client: Needed.
+[03:01] Client: Similarly
+[03:02] Client: Means I
+[03:04] Client: If it is for the customers,
+[03:06] Client: Bill number and bill number
+[03:08] Client: Log in with the phone number and their
+[03:13] Client: An option is needed to raise a service request. Each service request needs a unique service token.
+[03:14] Client: You
+[03:15] Client: If it is an admin, then that
+[03:16] Client: That is a role.
+[03:20] Client: Do you need an option to assign it to the staff, a service request? And then if that's the case, then...
+[03:24] Client: It should be generated as a PDF and sent to them by mail once the service request is complete.
+[03:26] Client: Similarly, the admin
+[03:29] Client: To add products and to add a category to it.
+[03:31] Client: Similarly, if we were to say now
+[03:33] Client: Ah...
+[03:34] Client: Ah, that's why.
+[03:38] Client: The option to delete and edit everything, and the option to add and delete the bill.
+[03:42] Client: The admin needs options like bill creation.
+[03:48] Client: Similarly, the staff just needs an interface. The admin needs a good dashboard and a preview, and one that is reasonably good. Similarly.
+[03:53] Client: If they are the ones making the payment, if they are our customers, then to them
+[03:59] Client: An option, an AI chatbot, an option to interact with an AI chatbot based on our base and for us to contact, and such options.
+[04:00] Client: Just
+[04:05] Client: If they have any basic issues, we can ask at the chatbot, like a service center.
+[04:07] Client: Because that chatbot tells them the solution.
+[04:10] Client: We needed an option like that. What would be the amount for this?
+[04:28] You: Sir, when we talk about our amount, if the proposal is created perfectly and your requirements are okay, then we can say it correctly.
+[04:30] You: It will be approximately ₹1.5 lakh rupees.
+[04:35] You: It is without a server. If there is a server, we can use that server. If not,
+[04:37] You: We will have to buy that server.
+[04:41] Client: Okay, how was the server? We didn't have this server.
+[04:43] Client: Ah, you are now on the server.
+[04:46] Client: If we are talking about this mentioned 1.5 lakh, then that
+[04:47] Client: It's not with the seller, is it?
+[04:49] Client: Okay, what is the cost of the server? How is it?
+[04:55] You: That is, we are now applying the annually package to the server.
+[04:58] You: 1.5 or
+[05:00] You: It is 4K, it is 4K, the package we are using now.
+[05:07] You: We are now offering the 4K package for one year. Along with that, we have service packages available for 5000 and 15000.
+[05:11] You: Sir, if it is okay, we could have done further read details.
+[05:17] Client: Okay, I will discuss something and tell you. You tell me.
+[05:18] Client: What is the proposal?
+[05:22] You: Sure sir, sure, sure. I will create the proposal and send it to you.
+[05:28] Client: Okay, thank you. There was a meeting. I will also leave.
+[05:34] You: Okay sir, okay okay. Sir, you can just contact if there is anything.
+[05:37] You: If it is not available on our portal, you can send a WhatsApp message.

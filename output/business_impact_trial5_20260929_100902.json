@@ -1,0 +1,22 @@
+{
+  "business_profile": {
+    "industry": "None",
+    "business_summary": "The provided transcript contains only a few seconds of audio interaction, including a brief greeting and a name, with no substantive discussion of business processes, costs, or operational requirements."
+  },
+  "current_processes": [],
+  "opportunities": [],
+  "explicit_numbers": [
+    {
+      "label": "Number of times 'three times' was mentioned",
+      "value": 1,
+      "unit": "count",
+      "evidence": "You: Three times."
+    }
+  ],
+  "missing_inputs": [],
+  "analysis_notes": [
+    "The transcript is incomplete and lacks substantive content regarding business operations, customer requirements, or process details necessary for business-process analysis.",
+    "No business cost, time, capacity, resource-utilization, operational-efficiency, revenue-leakage, error/rework, travel/dispatch, inventory, communication, reporting, or other measurable impact opportunities can be identified or supported by the available meeting transcript.",
+    "The only verifiable statements are a greeting ('Hello') and a name ('M.K.'), which do not constitute a business process or pain point."
+  ]
+}

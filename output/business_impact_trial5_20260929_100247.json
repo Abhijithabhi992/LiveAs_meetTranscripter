@@ -1,0 +1,16 @@
+{
+  "business_profile": {
+    "industry": "None",
+    "business_summary": "The provided transcript is extremely limited and contains only fragmented, non-substantive statements ('I am here.', 'We have an idea.', 'A little below.', 'Coming.'). No verifiable business context, operational details, or customer requirements are present."
+  },
+  "current_processes": [],
+  "opportunities": [],
+  "explicit_numbers": [],
+  "missing_inputs": [],
+  "analysis_notes": [
+    "The transcript is too fragmented to support any business-process analysis or identification of measurable impact opportunities.",
+    "No business activities, costs, time drivers, or requested automations are described.",
+    "No numeric values, process details, or customer requirements are present in the transcript to extract.",
+    "Per the instructions, no generic industry benchmarks or assumptions should be used to invent opportunities."
+  ]
+}

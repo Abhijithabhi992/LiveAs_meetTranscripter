@@ -1,0 +1,43 @@
+[00:25] You: Hello sir, please come in.
+[00:33] Client: Did you say chicken?
+[00:39] Client: Okay.
+[00:41] Client: Okay, we have arrived.
+[00:44] Client: It was a company called SVAC.
+[00:46] Client: Hmm.
+[00:47] Client: Our
+[00:51] Client: Requirements, if you say, it is HVAC. Requirements, if you say.
+[00:53] Client: So we need an AC.
+[00:57] Client: Web means, should I create a website? I am the admin for the staff in it.
+[00:58] Client: I
+[01:02] Client: We will get one admin and four staff. And to add staff.
+[01:08] Client: We need an option to edit and delete. Proposal, that is, we need an option to create a proposal for clients. Similarly.
+[01:12] Client: If a customer submits a PDF generation service request, then for that
+[01:16] Client: That should be given as a PDF to the system that goes in the mail, similarly.
+[01:16] Client: Excellent.
+[01:19] Client: A customer.
+[01:26] Client: Customer login, it doesn't need to be a customer login. There is only one option to access the customer. That is, if their bill number and their mobile number match, then they...
+[01:28] Client: Access it. Then they can see a dashboard.
+[01:30] Client: There, they can raise a service request.
+[01:33] Client: Let's check its status. There is such an option. Immediately to the admin.
+[01:42] Client: Give an option to add a category and add products. Similarly, we need to implement this WhatsApp chatbot. That is, when our client is accessed, they need an option.
+[01:46] Client: Go to WhatsApp. Once you go to WhatsApp, we need a WhatsApp chatbot there.
+[01:55] Client: If it is in that chatbot, if they have any doubts about any company or any working about our AC, if you ask that, a chatbot AI assistant will...
+[02:00] Client: Support and reply to that. If you need it further, contact details to call are there.
+[02:01] Client: Forward it.
+[02:02] Client: We need to do that option as well.
+[02:06] Client: Then, can you tell me what the amount will be and all the details?
+[02:10] You: Sir, we cannot tell the amount right now, but if that is the case...
+[02:13] You: I will tell you, that is, we
+[02:17] You: Approximately it will be 1.5 lakhs, sir, according to your requirements, sir.
+[02:19] You: If the proposal is okay with us, we can proceed accordingly.
+[02:21] You: Can create, sir.
+[02:23] You: Only then can we say it finally.
+[02:26] Client: Okay.
+[02:29] Client: So, how were the server details? Is it including the server, 1.5?
+[02:34] You: No sir, if we have the server, we will have to buy it externally. What we are doing now is one
+[02:36] You: It is 4000.
+[02:38] You: That is, 4000 per annum.
+[02:40] You: What is being done?
+[02:45] You: If you need it for Sir, if Sir has his own server, we can do that for you. Otherwise, you can post this server to Sir.
+[02:50] Client: Okay, I will check and tell you. You can send the proposal if you have any.
+[02:52] You: Okay sir, thank you.

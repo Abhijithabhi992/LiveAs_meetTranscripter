@@ -1,0 +1,185 @@
+{
+  "business_profile": {
+    "industry": "HVAC service and maintenance",
+    "business_summary": "A company with 10 to 12 staff that handles air conditioner service requests. The business currently relies on manual processes for request intake, technician assignment, status tracking, and reporting, which consumes significant time and requires dedicated administrative staff."
+  },
+  "current_processes": [
+    {
+      "area": "Service Request Intake and Assignment",
+      "current_state": "Service requests are received and manually assigned to technicians based on location, technician availability, and performance history (e.g., excluding those with negative feedback).",
+      "pain_point": "Manual assignment is time-consuming and leads to inefficiencies in workload distribution across technicians in the same region.",
+      "evidence": "Client states there are 10 to 12 staff to handle service and 'there are difficulties in handling and a lot of time is being spent on it'."
+    },
+    {
+      "area": "Status Tracking",
+      "current_state": "Managers manually track the status of service requests (e.g., where it reached, if it is done/finished) and follow up in the evening.",
+      "pain_point": "Manual tracking requires dedicated staff time and does not provide real-time visibility.",
+      "evidence": "Client states 'the information in this needs to be informed, and then it needs to be tracked. Where did it reach? Is it done? Is it finished? So, in the evening. There is traction.'"
+    },
+    {
+      "area": "Manager Reporting",
+      "current_state": "Managers receive manual updates and emails regarding pending service requests or cases open for a long time, and compile daily activity reports for technicians.",
+      "pain_point": "Manual compilation of daily reports (requests attended, closed, charges collected, products sold) is labor-intensive.",
+      "evidence": "Client states 'In the evening... this needs to be followed up like this' and requests 'a daily graphical report of work activities for each technician... all the details and things like that'."
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "BI-01",
+      "area": "Service Request Assignment",
+      "current_cost_driver": "Manual labor time for dispatchers/managers to assign jobs and track status.",
+      "current_state": "Manual assignment of service requests to technicians based on location and availability, with manual exclusion of technicians with negative feedback.",
+      "automation_opportunity": "Automated assignment of service requests to technicians based on location, availability, and performance history, with an efficient algorithm to balance workloads over time.",
+      "impact_type": "labour_time",
+      "metric": "hours of manual dispatch time per month",
+      "unit": "hours/month",
+      "formula": "Manual_Hours_Per_Month = (Number_of_Requests_Per_Month * Avg_Assignment_Time_Per_Request) - (Automated_Hours_Per_Month)",
+      "variables": [
+        {
+          "name": "number_of_requests_per_month",
+          "label": "Number of service requests handled per month",
+          "value": null,
+          "unit": "requests/month",
+          "source": "MISSING",
+          "evidence": "Client mentions '10 to 12 staff' and '10, 21. Crisp is happening' but no explicit monthly volume is given."
+        },
+        {
+          "name": "avg_assignment_time_per_request",
+          "label": "Average manual time to assign one service request",
+          "value": null,
+          "unit": "minutes/request",
+          "source": "MISSING",
+          "evidence": "Client mentions 'a lot of time is being spent' but no specific duration is provided."
+        },
+        {
+          "name": "automated_hours_per_month",
+          "label": "Time spent by staff on automated oversight and exception handling",
+          "value": null,
+          "unit": "hours/month",
+          "source": "MISSING",
+          "evidence": "Not specified in meeting."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculation_note": "Missing inputs: number_of_requests_per_month, avg_assignment_time_per_request, automated_hours_per_month",
+      "model_calculation_note": "The exact labor savings cannot be calculated without the monthly volume of service requests and the average time currently spent on manual assignment."
+    },
+    {
+      "id": "BI-02",
+      "area": "Manager Reporting",
+      "current_cost_driver": "Manual compilation of daily graphical reports and emails to managers regarding pending requests.",
+      "current_state": "Managers manually generate and send daily reports and follow-up emails on pending cases.",
+      "automation_opportunity": "Automated generation and distribution of daily graphical reports to managers via email and WhatsApp, including pending case alerts.",
+      "impact_type": "admin_time",
+      "metric": "hours of manual reporting time per day",
+      "unit": "hours/day",
+      "formula": "Manual_Hours_Per_Day = (Avg_Time_Per_Report_Generation * Number_of_Reports) + (Avg_Time_Per_Pending_Case_Alert)",
+      "variables": [
+        {
+          "name": "avg_time_per_report_generation",
+          "label": "Average time to manually compile a daily report",
+          "value": null,
+          "unit": "minutes/report",
+          "source": "MISSING",
+          "evidence": "Client requests 'daily graphical report' but does not state current manual time."
+        },
+        {
+          "name": "number_of_reports",
+          "label": "Number of daily reports generated",
+          "value": null,
+          "unit": "reports/day",
+          "source": "MISSING",
+          "evidence": "Not specified."
+        },
+        {
+          "name": "avg_time_per_pending_case_alert",
+          "label": "Average time to manually identify and alert on pending cases",
+          "value": null,
+          "unit": "minutes/alert",
+          "source": "MISSING",
+          "evidence": "Client mentions 'manager receives emails' but does not specify manual effort."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculation_note": "Missing inputs: avg_time_per_report_generation, number_of_reports, avg_time_per_pending_case_alert",
+      "model_calculation_note": "The exact time savings cannot be calculated without knowing the current manual time spent on report generation and pending case identification."
+    },
+    {
+      "id": "BI-03",
+      "area": "Technician Performance Management",
+      "current_cost_driver": "Manual exclusion of technicians with negative feedback from assignments, leading to potential capacity loss if not tracked properly.",
+      "current_state": "Technicians with negative feedback or bad reviews are manually excluded from receiving assignments.",
+      "automation_opportunity": "System automatically excludes technicians with negative feedback from receiving new assignments.",
+      "impact_type": "capacity_recovery",
+      "metric": "percentage of technician capacity utilized for active assignments",
+      "unit": "percentage",
+      "formula": "Capacity_Recovery_Percentage = ((Total_Technician_Capacity - Excluded_Capacity) / Total_Technician_Capacity) * 100",
+      "variables": [
+        {
+          "name": "total_technician_capacity",
+          "label": "Total available technician capacity for assignments",
+          "value": null,
+          "unit": "technicians",
+          "source": "MISSING",
+          "evidence": "Client mentions 10 to 12 staff but not all are technicians."
+        },
+        {
+          "name": "excluded_capacity",
+          "label": "Number of technicians excluded due to negative feedback",
+          "value": null,
+          "unit": "technicians",
+          "source": "MISSING",
+          "evidence": "Not specified."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculation_note": "Missing inputs: total_technician_capacity, excluded_capacity",
+      "model_calculation_note": "The exact capacity recovery cannot be calculated without knowing the number of technicians excluded and the total technician pool."
+    }
+  ],
+  "explicit_numbers": [
+    {
+      "label": "Number of staff handling service",
+      "value": 10,
+      "unit": "staff",
+      "evidence": "Client: 'There are 10 to 12 staff to handle the service.'"
+    },
+    {
+      "label": "Proposed software development cost",
+      "value": 100000,
+      "unit": "currency (INR)",
+      "evidence": "You: 'It should be within one lakh.'"
+    }
+  ],
+  "missing_inputs": [
+    {
+      "label": "Monthly volume of service requests",
+      "why_needed": "Required to calculate total manual labor time spent on assignment and reporting.",
+      "unit": "requests/month"
+    },
+    {
+      "label": "Average time spent on manual assignment per request",
+      "why_needed": "Required to quantify labor time savings from automation.",
+      "unit": "minutes/request"
+    },
+    {
+      "label": "Average time spent on manual report generation per day",
+      "why_needed": "Required to quantify administrative time savings.",
+      "unit": "minutes/report"
+    },
+    {
+      "label": "Number of technicians with negative feedback",
+      "why_needed": "Required to calculate capacity recovery.",
+      "unit": "technicians"
+    }
+  ],
+  "analysis_notes": [
+    "The meeting transcript is fragmented and contains several non-sequitur statements (e.g., 'Agyal Kiyamojith', 'Maple', 'Captain'), but the core business requirements are clearly about HVAC service request management.",
+    "The client explicitly states that manual handling of service requests is the 'main headache' and consumes 'a lot of time', establishing a clear pain point for automation.",
+    "The proposed software cost of 'one lakh' (INR 100,000) is a development/implementation cost and should not be treated as an operational business saving or benefit.",
+    "No specific numeric values for service request volume, time per task, or revenue are provided, making it impossible to calculate exact savings or ROI."
+  ]
+}

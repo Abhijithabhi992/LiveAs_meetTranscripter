@@ -1,0 +1,321 @@
+{
+  "business_profile": {
+    "industry": "HVAC service and maintenance",
+    "business_summary": "The client operates an HVAC service company with 10-12 service staff handling service requests and complaints from customers. They currently manage these requests manually, which is time-consuming and requires dedicated administrative staff."
+  },
+  "current_processes": [
+    {
+      "area": "Service Request Handling",
+      "current_state": "Service requests and complaints are handled manually behind a desk. A dedicated staff member is assigned to manage incoming requests, assign them to technicians based on location and availability, and track their status throughout the day (morning and evening updates).",
+      "pain_point": "Manual handling takes a lot of time and is the main headache, requiring dedicated staff to manage assignments and follow-ups.",
+      "evidence": "There are 10 to 12 staff to handle the service... there are difficulties in handling and a lot of time is being spent on it... the main headache is this."
+    },
+    {
+      "area": "Technician Assignment",
+      "current_state": "Requests are manually assigned to technicians based on their geographic area (e.g., Chinnakada region) and current workload. Managers check who has how many active requests and assign new ones manually.",
+      "pain_point": "Manual assignment is inefficient, prone to human error, and does not dynamically balance workload or exclude technicians with negative feedback or returns.",
+      "evidence": "Sitting behind where we were sitting... should handle... we need to check based on the time period... if Shyam, he is currently standing in Chinnakada... if there is another Chinnakad region as well... The computer should be automatically assigned."
+    },
+    {
+      "area": "Technician Performance Tracking",
+      "current_state": "Managers manually track daily work activities of technicians, including service requests attended, closed, service charges collected, and new products sold. This data is collected in the evening.",
+      "pain_point": "Manual data collection and tracking is time-consuming and lacks graphical reporting capabilities.",
+      "evidence": "There is a first cut tracking for lunch. Evening there is traction... What all did you do that day?... We need another system in a different way... In a graphical way, as an MS."
+    },
+    {
+      "area": "Customer Communication",
+      "current_state": "Customers use mobile phones to contact the company with service requests and complaints. The current process relies on manual handling of these communications.",
+      "pain_point": "Lack of an automated, structured channel (like a chatbot) to capture and route initial service requests.",
+      "evidence": "There is a mobile phone... To that phone customer with requests as you like... i also need a whatsapp chatbot implementation also its about hvac."
+    },
+    {
+      "area": "Complaint Escalation",
+      "current_state": "There is no automated mechanism to escalate or notify management if a service request remains open for an extended period (e.g., a year).",
+      "pain_point": "Potential for critical service requests to remain unresolved for long periods without management intervention.",
+      "evidence": "A service request within a year. If it doesn't close... that the manager receives emails. Needed."
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "BI-01",
+      "area": "Service Request Handling",
+      "current_cost_driver": "Dedicated administrative staff time spent on manual assignment and status tracking.",
+      "current_state": "Manual handling of 10-12 daily service requests and complaints requires a dedicated staff member for assignment, tracking, and follow-up.",
+      "automation_opportunity": "Implement an automated web application to receive, assign, and track service requests.",
+      "impact_type": "labour_time",
+      "metric": "Hours per month spent by administrative staff on manual service request handling.",
+      "unit": "hours/month",
+      "formula": "hours_per_request * requests_per_month",
+      "variables": [
+        {
+          "name": "requests_per_month",
+          "label": "Number of service requests per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "requests/month",
+          "source": "MEETING | MISSING",
+          "evidence": "Client mentions 10 to 12 staff and 'daily one 10, 21' (interpreted as 10-21 requests daily), but exact daily/monthly volume is not explicitly stated."
+        },
+        {
+          "name": "hours_per_request",
+          "label": "Time spent per request for manual handling",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours/request",
+          "source": "MEETING | MISSING",
+          "evidence": "Client states 'a lot of time is being spent' but no specific time per request is given."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "Not applicable - no meeting-supported calculation possible due to missing volume and time inputs.",
+      "assumption_note": "The meeting does not provide specific numbers for daily/monthly request volume or exact time spent per request, so a calculation cannot be performed.",
+      "example_calculation": "If 15 requests/day * 30 days = 450 requests/month, and 0.5 hours/request = 225 hours/month. This is an illustrative scenario only.",
+      "calculation_note": "Missing inputs: requests_per_month, hours_per_request",
+      "model_calculation_note": "The result is illustrative only, as the actual request volume and time per request are missing from the meeting."
+    },
+    {
+      "id": "BI-02",
+      "area": "Technician Assignment",
+      "current_cost_driver": "Inefficient manual assignment leading to potential workload imbalance and assignment of technicians with negative feedback.",
+      "current_state": "Technicians are manually assigned based on location and current active requests. Technicians with negative feedback or returns are not automatically excluded.",
+      "automation_opportunity": "Implement an intelligent assignment algorithm that maps customer location to technician location and balances active requests over a time period.",
+      "impact_type": "capacity_recovery",
+      "metric": "Percentage of time technicians spend on non-productive administrative tasks versus actual service delivery.",
+      "unit": "percentage",
+      "formula": "((total_work_hours - admin_hours) / total_work_hours) * 100",
+      "variables": [
+        {
+          "name": "total_work_hours",
+          "label": "Total working hours per technician per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours/month",
+          "source": "MEETING | MISSING",
+          "evidence": "Not specified in the meeting."
+        },
+        {
+          "name": "admin_hours",
+          "label": "Hours spent on manual assignment and status tracking",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours/month",
+          "source": "MEETING | MISSING",
+          "evidence": "Not specified in the meeting."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "Not applicable - no meeting-supported calculation possible due to missing time inputs.",
+      "assumption_note": "The meeting does not provide specific hours for administrative tasks or total work hours, so a calculation cannot be performed.",
+      "example_calculation": "If a technician works 160 hours/month and spends 20 hours on manual admin, capacity recovery is (160-20)/160 = 87.5%. This is illustrative only.",
+      "calculation_note": "Missing inputs: total_work_hours, admin_hours",
+      "model_calculation_note": "The result is illustrative only, as the actual administrative hours are missing from the meeting."
+    },
+    {
+      "id": "BI-03",
+      "area": "Technician Performance Tracking",
+      "current_cost_driver": "Manual data collection and lack of graphical reporting for daily technician activities.",
+      "current_state": "Managers manually track and report on daily service requests attended, closed, service charges collected, and new products sold.",
+      "automation_opportunity": "Implement an automated system with graphical reports to track and display daily technician work activities.",
+      "impact_type": "reporting_time",
+      "metric": "Time saved per month by management in compiling and reviewing technician performance reports.",
+      "unit": "hours/month",
+      "formula": "hours_per_report * reports_per_month",
+      "variables": [
+        {
+          "name": "hours_per_report",
+          "label": "Time spent per report",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "hours/report",
+          "source": "MEETING | MISSING",
+          "evidence": "Not specified in the meeting."
+        },
+        {
+          "name": "reports_per_month",
+          "label": "Number of reports generated per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "reports/month",
+          "source": "MEETING | MISSING",
+          "evidence": "Not specified in the meeting."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "Not applicable - no meeting-supported calculation possible due to missing time and frequency inputs.",
+      "assumption_note": "The meeting does not provide specific time per report or report frequency, so a calculation cannot be performed.",
+      "example_calculation": "If 1 report/week * 4 weeks = 4 reports/month, and 2 hours/report = 8 hours/month. This is illustrative only.",
+      "calculation_note": "Missing inputs: hours_per_report, reports_per_month",
+      "model_calculation_note": "The result is illustrative only, as the actual report time and frequency are missing from the meeting."
+    },
+    {
+      "id": "BI-04",
+      "area": "Customer Communication",
+      "current_cost_driver": "Unstructured manual handling of customer requests via mobile phones.",
+      "current_state": "Customers contact the company via mobile phones with service requests and complaints, which are then manually processed.",
+      "automation_opportunity": "Implement a WhatsApp chatbot to handle initial HVAC service requests.",
+      "impact_type": "customer_handling",
+      "metric": "Number of customer requests handled per month through the chatbot.",
+      "unit": "requests/month",
+      "formula": "requests_per_day * days_per_month",
+      "variables": [
+        {
+          "name": "requests_per_day",
+          "label": "Average number of customer requests per day",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "requests/day",
+          "source": "MEETING | MISSING",
+          "evidence": "Client mentions 'daily one 10, 21' which may imply 10-21 requests, but this is unclear. The exact volume is not explicitly stated."
+        },
+        {
+          "name": "days_per_month",
+          "label": "Number of operating days per month",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "days/month",
+          "source": "MEETING | MISSING",
+          "evidence": "Not specified in the meeting."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "Not applicable - no meeting-supported calculation possible due to missing volume inputs.",
+      "assumption_note": "The meeting does not provide a clear daily request volume or operating days, so a calculation cannot be performed.",
+      "example_calculation": "If 15 requests/day * 30 days = 450 requests/month. This is illustrative only.",
+      "calculation_note": "Missing inputs: requests_per_day, days_per_month",
+      "model_calculation_note": "The result is illustrative only, as the exact daily request volume is missing from the meeting."
+    },
+    {
+      "id": "BI-05",
+      "area": "Complaint Escalation",
+      "current_cost_driver": "Lack of automated escalation for unresolved service requests.",
+      "current_state": "There is no automated system to notify management if a service request remains open for a year.",
+      "automation_opportunity": "Implement an automated email notification to the manager if a service request remains open for a year.",
+      "impact_type": "error_rework",
+      "metric": "Number of unresolved service requests per year that would trigger an automated notification.",
+      "unit": "requests/year",
+      "formula": "requests_per_year * (percentage_remaining_open)",
+      "variables": [
+        {
+          "name": "requests_per_year",
+          "label": "Total service requests per year",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "requests/year",
+          "source": "MEETING | MISSING",
+          "evidence": "Not specified in the meeting."
+        },
+        {
+          "name": "percentage_remaining_open",
+          "label": "Percentage of requests remaining open for a year",
+          "value": null,
+          "low_value": null,
+          "high_value": null,
+          "unit": "percentage",
+          "source": "MEETING | MISSING",
+          "evidence": "Not specified in the meeting."
+        }
+      ],
+      "result_type": "MISSING_INPUTS",
+      "calculated_value": null,
+      "calculated_low": null,
+      "calculated_high": null,
+      "benchmark_basis": "Not applicable - no meeting-supported calculation possible due to missing volume and percentage inputs.",
+      "assumption_note": "The meeting does not provide total annual requests or the percentage that remain open for a year, so a calculation cannot be performed.",
+      "example_calculation": "If 5,400 requests/year (15/day * 360 days) and 1% remain open = 54 requests/year. This is illustrative only.",
+      "calculation_note": "Missing inputs: requests_per_year, percentage_remaining_open",
+      "model_calculation_note": "The result is illustrative only, as the total annual requests and open percentage are missing from the meeting."
+    }
+  ],
+  "explicit_numbers": [
+    {
+      "label": "Number of service staff",
+      "value": 10,
+      "unit": "staff",
+      "evidence": "There are 10 to 12 staff to handle the service."
+    },
+    {
+      "label": "Service request volume (daily range)",
+      "value": 10,
+      "unit": "requests/day",
+      "evidence": "Daily one 10, 21."
+    },
+    {
+      "label": "Service request volume (daily range)",
+      "value": 21,
+      "unit": "requests/day",
+      "evidence": "Daily one 10, 21."
+    },
+    {
+      "label": "Service request escalation threshold",
+      "value": 1,
+      "unit": "year",
+      "evidence": "A service request within a year. If it doesn't close."
+    },
+    {
+      "label": "Proposed software cost",
+      "value": 100000,
+      "unit": "currency",
+      "evidence": "Approximately one lakh."
+    }
+  ],
+  "missing_inputs": [
+    {
+      "label": "Exact daily service request volume",
+      "why_needed": "Required to calculate total monthly/annual requests and potential time savings.",
+      "unit": "requests/day"
+    },
+    {
+      "label": "Time spent per request for manual handling",
+      "why_needed": "Required to calculate total administrative labour hours saved.",
+      "unit": "hours/request"
+    },
+    {
+      "label": "Total working hours per technician",
+      "why_needed": "Required to calculate capacity recovery from automation.",
+      "unit": "hours/month"
+    },
+    {
+      "label": "Time spent on manual reporting",
+      "why_needed": "Required to calculate reporting time savings.",
+      "unit": "hours/report"
+    },
+    {
+      "label": "Number of operating days per month",
+      "why_needed": "Required to calculate monthly/annual request volume.",
+      "unit": "days/month"
+    },
+    {
+      "label": "Percentage of requests remaining open for a year",
+      "why_needed": "Required to calculate number of escalated requests.",
+      "unit": "percentage"
+    }
+  ],
+  "analysis_notes": [
+    "The meeting transcript is fragmented and contains several non-sequiturs (e.g., 'Agyal Kiyamojith', 'faction', 'neck', 'Maple', 'Fire', 'cast', 'Captain'). These have been ignored as they do not provide business context.",
+    "The client mentions 'daily one 10, 21' which is interpreted as a range of 10-21 requests per day, but this is ambiguous. The exact volume is treated as missing for calculation purposes.",
+    "The proposed software cost of 'one lakh' is treated as a project cost, not an operational benefit, and is not included in any ROI calculation.",
+    "The requested automation (e.g., automatic assignment, WhatsApp chatbot, email notifications) establishes potential improvement areas, but without specific volume and time data from the meeting, no guaranteed savings can be calculated.",
+    "The client mentions 'negative feedback or returns' as a condition for assignment, but no data is provided on the frequency of such feedback, so no error/rework cost can be calculated."
+  ]
+}
